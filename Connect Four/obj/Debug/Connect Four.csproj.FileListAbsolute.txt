@@ -1,0 +1,13 @@
+D:\Coding\MyProjects\Connect Four\bin\Debug\Connect Four.exe.config
+D:\Coding\MyProjects\Connect Four\bin\Debug\Connect Four.exe
+D:\Coding\MyProjects\Connect Four\bin\Debug\Connect Four.pdb
+D:\Coding\MyProjects\Connect Four\obj\Debug\Connect Four.csproj.AssemblyReference.cache
+D:\Coding\MyProjects\Connect Four\obj\Debug\Connect Four.csproj.SuggestedBindingRedirects.cache
+D:\Coding\MyProjects\Connect Four\obj\Debug\Connect_Four.ConnectFour.resources
+D:\Coding\MyProjects\Connect Four\obj\Debug\Connect_Four.Properties.Resources.resources
+D:\Coding\MyProjects\Connect Four\obj\Debug\Connect Four.csproj.GenerateResource.cache
+D:\Coding\MyProjects\Connect Four\obj\Debug\Connect Four.csproj.CoreCompileInputs.cache
+D:\Coding\MyProjects\Connect Four\obj\Debug\Connect Four.exe
+D:\Coding\MyProjects\Connect Four\obj\Debug\Connect Four.pdb
+D:\Coding\MyProjects\Connect Four\obj\Debug\Connect_Four.HowToPlay.resources
+D:\Coding\MyProjects\Connect Four\obj\Debug\Connect_Four.Info.resources
