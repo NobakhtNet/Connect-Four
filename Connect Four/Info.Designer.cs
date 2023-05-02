@@ -32,7 +32,7 @@
             this.btnExit = new System.Windows.Forms.Button();
             this.lblInfo = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.lblLink = new System.Windows.Forms.LinkLabel();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -94,20 +94,20 @@
             this.label5.TabIndex = 19;
             this.label5.Text = "Github :";
             // 
-            // linkLabel1
+            // lblLink
             // 
-            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Gadugi", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.LinkColor = System.Drawing.SystemColors.Highlight;
-            this.linkLabel1.Location = new System.Drawing.Point(147, 237);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(315, 27);
-            this.linkLabel1.TabIndex = 17;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Tag = "";
-            this.linkLabel1.Text = "https://github.com/NeutronO";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            this.lblLink.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.lblLink.AutoSize = true;
+            this.lblLink.Font = new System.Drawing.Font("Gadugi", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLink.LinkColor = System.Drawing.SystemColors.Highlight;
+            this.lblLink.Location = new System.Drawing.Point(147, 237);
+            this.lblLink.Name = "lblLink";
+            this.lblLink.Size = new System.Drawing.Size(315, 27);
+            this.lblLink.TabIndex = 17;
+            this.lblLink.TabStop = true;
+            this.lblLink.Tag = "";
+            this.lblLink.Text = "https://github.com/NeutronO";
+            this.lblLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // label3
             // 
@@ -151,7 +151,7 @@
             this.ClientSize = new System.Drawing.Size(500, 300);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.lblLink);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pnlInfo);
@@ -171,7 +171,7 @@
         private System.Windows.Forms.Panel pnlInfo;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.LinkLabel lblLink;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;

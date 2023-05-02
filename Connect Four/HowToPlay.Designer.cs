@@ -32,7 +32,7 @@
             this.pnlHow = new System.Windows.Forms.Panel();
             this.btnExit = new System.Windows.Forms.Button();
             this.lblHow = new System.Windows.Forms.Label();
-            this.lblIStructions = new System.Windows.Forms.Label();
+            this.lblInstructions = new System.Windows.Forms.Label();
             this.pnlHow.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -80,25 +80,25 @@
             this.lblHow.Text = "How To Play :";
             this.lblHow.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lblIStructions
+            // lblInstructions
             // 
-            this.lblIStructions.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblIStructions.Font = new System.Drawing.Font("Gadugi", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIStructions.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.lblIStructions.Location = new System.Drawing.Point(0, 66);
-            this.lblIStructions.Name = "lblIStructions";
-            this.lblIStructions.Size = new System.Drawing.Size(500, 234);
-            this.lblIStructions.TabIndex = 1;
-            this.lblIStructions.Text = resources.GetString("lblIStructions.Text");
-            this.lblIStructions.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblInstructions.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblInstructions.Font = new System.Drawing.Font("Gadugi", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInstructions.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.lblInstructions.Location = new System.Drawing.Point(0, 66);
+            this.lblInstructions.Name = "lblInstructions";
+            this.lblInstructions.Size = new System.Drawing.Size(500, 234);
+            this.lblInstructions.TabIndex = 1;
+            this.lblInstructions.Text = resources.GetString("lblInstructions.Text");
+            this.lblInstructions.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // HowToPlay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(500, 300);
-            this.Controls.Add(this.lblIStructions);
+            this.Controls.Add(this.lblInstructions);
             this.Controls.Add(this.pnlHow);
             this.Font = new System.Drawing.Font("Gadugi", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -115,6 +115,6 @@
         private System.Windows.Forms.Panel pnlHow;
         private System.Windows.Forms.Label lblHow;
         private System.Windows.Forms.Button btnExit;
-        private System.Windows.Forms.Label lblIStructions;
+        private System.Windows.Forms.Label lblInstructions;
     }
 }

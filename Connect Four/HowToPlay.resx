@@ -117,8 +117,8 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="lblIStructions.Text" xml:space="preserve">
-    <value>1. Click on the column where you want to drop your colored circle.
+  <data name="lblInstructions.Text" xml:space="preserve">
+    <value>1. Click on the circle of the column where you want to drop your colored pieces.
 2. Take turns with your opponent until someone connects four circles in a row horizontally, vertically, or diagonally, or the grid is filled.
 3. The first player to connect four in a row wins.
 4. Click "Restart" to play again.

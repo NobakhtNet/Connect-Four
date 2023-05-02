@@ -1,13 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
-using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Connect_Four
@@ -457,14 +450,11 @@ namespace Connect_Four
 
         private void btnRestart_Click(object sender, EventArgs e)
         {
-            foreach (Control c in this.Controls)
+            foreach (Control c in tblConnect4.Controls)
             {
-                if (c is RoundButton)
-                {
-                    c.BackColor = Color.OldLace;
-                    ((RoundButton)c).FlatAppearance.MouseOverBackColor = Color.OldLace;
-                    ((RoundButton)c).FlatAppearance.MouseDownBackColor = Color.OldLace;
-                }
+                c.BackColor = Color.OldLace;
+                ((RoundButton)c).FlatAppearance.MouseOverBackColor = Color.OldLace;
+                ((RoundButton)c).FlatAppearance.MouseDownBackColor = Color.OldLace;
             }
             a = 0; b = 0; c = 0; d = 0; f = 0; g = 0; h = 0; moveCounter = 0;
             gameEnded = false;
