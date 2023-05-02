@@ -4,14 +4,18 @@
 
 ## Features
 - Checks for the winner or draw ofter every move
-- Counts Moves and Wins for each player
-- Shows whose turn it is (Red or Yellow)
+- Counts Wins for each player and moves
 - Form size is adjustable
+- Restart button and turn changes after each game
+- Shows whose turn it is (Red or Yellow)
 - How to play buttons and instructions
 - Custom Form border color
+- Smooth playing experience
 
 ## Screenshots
 ![image](https://user-images.githubusercontent.com/96955087/235647334-9ff2a685-1b5d-47c7-b41c-04dd9c742ecf.png)
+![image](https://user-images.githubusercontent.com/96955087/235659165-7ae2311b-bcdf-460e-8650-c20ef81e6274.png)
+
 
 ## How to play
 1. Click on the circle of the column where you want to drop your colored pieces.
@@ -21,8 +25,15 @@
 5. Have fun!
 
 ## Operating Systems
-Windows 7,8,10,11
+Windows 7,8,10,11 .NET Framework installed
 
 ---
-
 ### Made and Adjusted by Alireza Nobakht 
+<pre>
+███╗░░██╗███████╗██╗░░░██╗████████╗██████╗░░█████╗░███╗░░██╗
+████╗░██║██╔════╝██║░░░██║╚══██╔══╝██╔══██╗██╔══██╗████╗░██║
+██╔██╗██║█████╗░░██║░░░██║░░░██║░░░██████╔╝██║░░██║██╔██╗██║
+██║╚████║██╔══╝░░██║░░░██║░░░██║░░░██╔══██╗██║░░██║██║╚████║
+██║░╚███║███████╗╚██████╔╝░░░██║░░░██║░░██║╚█████╔╝██║░╚███║
+╚═╝░░╚══╝╚══════╝░╚═════╝░░░░╚═╝░░░╚═╝░░╚═╝░╚════╝░╚═╝░░╚══╝
+</pre>
