@@ -10,7 +10,7 @@
 - Form size is adjustable
 - Shows whose turn it is (Red or Yellow)
 - How to play buttons and instructions
-- Custom Form border color `rgb(9, 105, 218)`
+- Custom Form border color `rgb(255,228,196)`
 
 ## Screenshots
 ![image](https://user-images.githubusercontent.com/96955087/235647334-9ff2a685-1b5d-47c7-b41c-04dd9c742ecf.png)
