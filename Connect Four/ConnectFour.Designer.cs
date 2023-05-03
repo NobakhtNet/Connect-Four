@@ -41,6 +41,8 @@
             this.pnlStats = new System.Windows.Forms.Panel();
             this.lblRedScore = new System.Windows.Forms.Label();
             this.lblYellowScore = new System.Windows.Forms.Label();
+            this.btnTurn = new Connect_Four.RoundButton();
+            this.btnOutLine = new Connect_Four.RoundButton();
             this.lnlTurn = new System.Windows.Forms.Label();
             this.lblMove = new System.Windows.Forms.Label();
             this.tblConnect4 = new System.Windows.Forms.TableLayoutPanel();
@@ -86,8 +88,6 @@
             this.b55 = new Connect_Four.RoundButton();
             this.b34 = new Connect_Four.RoundButton();
             this.b75 = new Connect_Four.RoundButton();
-            this.btnTurn = new Connect_Four.RoundButton();
-            this.btnOutLine = new Connect_Four.RoundButton();
             this.pnlTitle.SuspendLayout();
             this.pnlInfo.SuspendLayout();
             this.tblButtons.SuspendLayout();
@@ -251,6 +251,32 @@
             this.lblYellowScore.TabIndex = 90;
             this.lblYellowScore.Text = "Yellow : 0";
             // 
+            // btnTurn
+            // 
+            this.btnTurn.BackColor = System.Drawing.Color.Red;
+            this.btnTurn.FlatAppearance.BorderSize = 0;
+            this.btnTurn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
+            this.btnTurn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.btnTurn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTurn.Location = new System.Drawing.Point(151, 78);
+            this.btnTurn.Name = "btnTurn";
+            this.btnTurn.Size = new System.Drawing.Size(30, 30);
+            this.btnTurn.TabIndex = 89;
+            this.btnTurn.UseVisualStyleBackColor = false;
+            // 
+            // btnOutLine
+            // 
+            this.btnOutLine.BackColor = System.Drawing.Color.Black;
+            this.btnOutLine.FlatAppearance.BorderSize = 0;
+            this.btnOutLine.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.btnOutLine.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.btnOutLine.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOutLine.Location = new System.Drawing.Point(149, 76);
+            this.btnOutLine.Name = "btnOutLine";
+            this.btnOutLine.Size = new System.Drawing.Size(34, 34);
+            this.btnOutLine.TabIndex = 88;
+            this.btnOutLine.UseVisualStyleBackColor = false;
+            // 
             // lnlTurn
             // 
             this.lnlTurn.AutoSize = true;
@@ -276,20 +302,20 @@
             this.tblConnect4.BackColor = System.Drawing.Color.Transparent;
             this.tblConnect4.ColumnCount = 15;
             this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 5F));
-            this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.83452F));
-            this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.5263999F));
-            this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.83452F));
-            this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.5263999F));
-            this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.83452F));
-            this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.5263999F));
-            this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.83451F));
-            this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.5263999F));
-            this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.83452F));
-            this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.5264F));
-            this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.83452F));
-            this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.5263999F));
-            this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.83451F));
-            this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 3F));
+            this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.8069F));
+            this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.5253491F));
+            this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.8069F));
+            this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.5253491F));
+            this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.8069F));
+            this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.5253491F));
+            this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.80689F));
+            this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.5253491F));
+            this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.8069F));
+            this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.5253493F));
+            this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.8069F));
+            this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.5253491F));
+            this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.80689F));
+            this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.1996008F));
             this.tblConnect4.Controls.Add(this.b71, 13, 11);
             this.tblConnect4.Controls.Add(this.b31, 5, 11);
             this.tblConnect4.Controls.Add(this.b61, 11, 11);
@@ -981,32 +1007,6 @@
             this.b75.TabIndex = 127;
             this.b75.UseVisualStyleBackColor = false;
             this.b75.Click += new System.EventHandler(this.btnColumn7_Click);
-            // 
-            // btnTurn
-            // 
-            this.btnTurn.BackColor = System.Drawing.Color.Red;
-            this.btnTurn.FlatAppearance.BorderSize = 0;
-            this.btnTurn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
-            this.btnTurn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.btnTurn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTurn.Location = new System.Drawing.Point(151, 78);
-            this.btnTurn.Name = "btnTurn";
-            this.btnTurn.Size = new System.Drawing.Size(30, 30);
-            this.btnTurn.TabIndex = 89;
-            this.btnTurn.UseVisualStyleBackColor = false;
-            // 
-            // btnOutLine
-            // 
-            this.btnOutLine.BackColor = System.Drawing.Color.Black;
-            this.btnOutLine.FlatAppearance.BorderSize = 0;
-            this.btnOutLine.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.btnOutLine.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.btnOutLine.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOutLine.Location = new System.Drawing.Point(149, 76);
-            this.btnOutLine.Name = "btnOutLine";
-            this.btnOutLine.Size = new System.Drawing.Size(34, 34);
-            this.btnOutLine.TabIndex = 88;
-            this.btnOutLine.UseVisualStyleBackColor = false;
             // 
             // ConnectFour
             // 
