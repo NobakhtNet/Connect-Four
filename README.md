@@ -3,12 +3,12 @@
 ### Connect4 game made in C# windows forms 
 
 ## Features
-- Checks for the winner or draw ofter every move
-- Use of keyboard buttons (1, 2, 3, 4, 5, 6, 7 also on the number pad) to choose column
-- Restart button + turn changes after each game, To restart the game you can also press "R" on your keyboard
-- Counts Wins for each player and moves
+- Checks for the **winner** or **draw** ofter every move
+- Use of **keyboard buttons** (1, 2, 3, 4, 5, 6, 7 also on the number pad) to choose column
+- **Restart** button + turn changes after each game, To restart the game you can also press **"R"** on your keyboard
+- Counts **Wins** for each player and **moves**
 - Form size is adjustable
-- Shows whose turn it is (Red or Yellow)
+- Shows whose **turn** it is (Red or Yellow)
 - How to play buttons and instructions
 - Custom Form border color `rgb(255,228,196)`
 
