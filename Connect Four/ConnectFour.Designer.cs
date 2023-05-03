@@ -41,8 +41,6 @@
             this.pnlStats = new System.Windows.Forms.Panel();
             this.lblRedScore = new System.Windows.Forms.Label();
             this.lblYellowScore = new System.Windows.Forms.Label();
-            this.btnTurn = new Connect_Four.RoundButton();
-            this.btnOutLine = new Connect_Four.RoundButton();
             this.lnlTurn = new System.Windows.Forms.Label();
             this.lblMove = new System.Windows.Forms.Label();
             this.tblConnect4 = new System.Windows.Forms.TableLayoutPanel();
@@ -88,6 +86,8 @@
             this.b55 = new Connect_Four.RoundButton();
             this.b34 = new Connect_Four.RoundButton();
             this.b75 = new Connect_Four.RoundButton();
+            this.btnTurn = new Connect_Four.RoundButton();
+            this.btnOutLine = new Connect_Four.RoundButton();
             this.pnlTitle.SuspendLayout();
             this.pnlInfo.SuspendLayout();
             this.tblButtons.SuspendLayout();
@@ -251,32 +251,6 @@
             this.lblYellowScore.TabIndex = 90;
             this.lblYellowScore.Text = "Yellow : 0";
             // 
-            // btnTurn
-            // 
-            this.btnTurn.BackColor = System.Drawing.Color.Red;
-            this.btnTurn.FlatAppearance.BorderSize = 0;
-            this.btnTurn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
-            this.btnTurn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.btnTurn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTurn.Location = new System.Drawing.Point(151, 78);
-            this.btnTurn.Name = "btnTurn";
-            this.btnTurn.Size = new System.Drawing.Size(30, 30);
-            this.btnTurn.TabIndex = 89;
-            this.btnTurn.UseVisualStyleBackColor = false;
-            // 
-            // btnOutLine
-            // 
-            this.btnOutLine.BackColor = System.Drawing.Color.Black;
-            this.btnOutLine.FlatAppearance.BorderSize = 0;
-            this.btnOutLine.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.btnOutLine.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.btnOutLine.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOutLine.Location = new System.Drawing.Point(149, 76);
-            this.btnOutLine.Name = "btnOutLine";
-            this.btnOutLine.Size = new System.Drawing.Size(34, 34);
-            this.btnOutLine.TabIndex = 88;
-            this.btnOutLine.UseVisualStyleBackColor = false;
-            // 
             // lnlTurn
             // 
             this.lnlTurn.AutoSize = true;
@@ -315,7 +289,7 @@
             this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.83452F));
             this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.5263999F));
             this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.83451F));
-            this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 1F));
+            this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 3F));
             this.tblConnect4.Controls.Add(this.b71, 13, 11);
             this.tblConnect4.Controls.Add(this.b31, 5, 11);
             this.tblConnect4.Controls.Add(this.b61, 11, 11);
@@ -391,6 +365,7 @@
             this.b71.Size = new System.Drawing.Size(77, 77);
             this.b71.TabIndex = 147;
             this.b71.UseVisualStyleBackColor = false;
+            this.b71.Click += new System.EventHandler(this.btnColumn7_Click);
             // 
             // b31
             // 
@@ -405,6 +380,7 @@
             this.b31.Size = new System.Drawing.Size(77, 77);
             this.b31.TabIndex = 132;
             this.b31.UseVisualStyleBackColor = false;
+            this.b31.Click += new System.EventHandler(this.BtnColumn3_Click);
             // 
             // b61
             // 
@@ -419,6 +395,7 @@
             this.b61.Size = new System.Drawing.Size(77, 77);
             this.b61.TabIndex = 148;
             this.b61.UseVisualStyleBackColor = false;
+            this.b61.Click += new System.EventHandler(this.btnColumn6_Click);
             // 
             // b11
             // 
@@ -433,6 +410,7 @@
             this.b11.Size = new System.Drawing.Size(77, 77);
             this.b11.TabIndex = 74;
             this.b11.UseVisualStyleBackColor = false;
+            this.b11.Click += new System.EventHandler(this.BtnColumn1_Click);
             // 
             // b51
             // 
@@ -447,6 +425,7 @@
             this.b51.Size = new System.Drawing.Size(77, 77);
             this.b51.TabIndex = 142;
             this.b51.UseVisualStyleBackColor = false;
+            this.b51.Click += new System.EventHandler(this.BtnColumn5_Click);
             // 
             // b41
             // 
@@ -461,6 +440,7 @@
             this.b41.Size = new System.Drawing.Size(77, 77);
             this.b41.TabIndex = 137;
             this.b41.UseVisualStyleBackColor = false;
+            this.b41.Click += new System.EventHandler(this.BtnColumn4_Click);
             // 
             // b21
             // 
@@ -475,6 +455,7 @@
             this.b21.Size = new System.Drawing.Size(77, 77);
             this.b21.TabIndex = 151;
             this.b21.UseVisualStyleBackColor = false;
+            this.b21.Click += new System.EventHandler(this.BtnColumn2_Click);
             // 
             // b16
             // 
@@ -489,6 +470,7 @@
             this.b16.Size = new System.Drawing.Size(77, 77);
             this.b16.TabIndex = 115;
             this.b16.UseVisualStyleBackColor = false;
+            this.b16.Click += new System.EventHandler(this.BtnColumn1_Click);
             // 
             // b32
             // 
@@ -503,6 +485,7 @@
             this.b32.Size = new System.Drawing.Size(77, 77);
             this.b32.TabIndex = 133;
             this.b32.UseVisualStyleBackColor = false;
+            this.b32.Click += new System.EventHandler(this.BtnColumn3_Click);
             // 
             // b12
             // 
@@ -517,6 +500,7 @@
             this.b12.Size = new System.Drawing.Size(77, 77);
             this.b12.TabIndex = 155;
             this.b12.UseVisualStyleBackColor = false;
+            this.b12.Click += new System.EventHandler(this.BtnColumn1_Click);
             // 
             // b22
             // 
@@ -531,6 +515,7 @@
             this.b22.Size = new System.Drawing.Size(77, 77);
             this.b22.TabIndex = 152;
             this.b22.UseVisualStyleBackColor = false;
+            this.b22.Click += new System.EventHandler(this.BtnColumn2_Click);
             // 
             // b26
             // 
@@ -545,6 +530,7 @@
             this.b26.Size = new System.Drawing.Size(77, 77);
             this.b26.TabIndex = 119;
             this.b26.UseVisualStyleBackColor = false;
+            this.b26.Click += new System.EventHandler(this.BtnColumn2_Click);
             // 
             // b52
             // 
@@ -559,6 +545,7 @@
             this.b52.Size = new System.Drawing.Size(77, 77);
             this.b52.TabIndex = 143;
             this.b52.UseVisualStyleBackColor = false;
+            this.b52.Click += new System.EventHandler(this.BtnColumn5_Click);
             // 
             // b42
             // 
@@ -573,6 +560,7 @@
             this.b42.Size = new System.Drawing.Size(77, 77);
             this.b42.TabIndex = 138;
             this.b42.UseVisualStyleBackColor = false;
+            this.b42.Click += new System.EventHandler(this.BtnColumn4_Click);
             // 
             // b72
             // 
@@ -587,6 +575,7 @@
             this.b72.Size = new System.Drawing.Size(77, 77);
             this.b72.TabIndex = 149;
             this.b72.UseVisualStyleBackColor = false;
+            this.b72.Click += new System.EventHandler(this.btnColumn7_Click);
             // 
             // b62
             // 
@@ -601,6 +590,7 @@
             this.b62.Size = new System.Drawing.Size(77, 77);
             this.b62.TabIndex = 131;
             this.b62.UseVisualStyleBackColor = false;
+            this.b62.Click += new System.EventHandler(this.btnColumn6_Click);
             // 
             // b23
             // 
@@ -615,6 +605,7 @@
             this.b23.Size = new System.Drawing.Size(77, 77);
             this.b23.TabIndex = 153;
             this.b23.UseVisualStyleBackColor = false;
+            this.b23.Click += new System.EventHandler(this.BtnColumn2_Click);
             // 
             // b24
             // 
@@ -629,6 +620,7 @@
             this.b24.Size = new System.Drawing.Size(77, 77);
             this.b24.TabIndex = 154;
             this.b24.UseVisualStyleBackColor = false;
+            this.b24.Click += new System.EventHandler(this.BtnColumn2_Click);
             // 
             // b36
             // 
@@ -643,6 +635,7 @@
             this.b36.Size = new System.Drawing.Size(77, 77);
             this.b36.TabIndex = 121;
             this.b36.UseVisualStyleBackColor = false;
+            this.b36.Click += new System.EventHandler(this.BtnColumn3_Click);
             // 
             // b46
             // 
@@ -657,6 +650,7 @@
             this.b46.Size = new System.Drawing.Size(77, 77);
             this.b46.TabIndex = 122;
             this.b46.UseVisualStyleBackColor = false;
+            this.b46.Click += new System.EventHandler(this.BtnColumn4_Click);
             // 
             // b63
             // 
@@ -671,6 +665,7 @@
             this.b63.Size = new System.Drawing.Size(77, 77);
             this.b63.TabIndex = 130;
             this.b63.UseVisualStyleBackColor = false;
+            this.b63.Click += new System.EventHandler(this.btnColumn6_Click);
             // 
             // b15
             // 
@@ -685,6 +680,7 @@
             this.b15.Size = new System.Drawing.Size(77, 77);
             this.b15.TabIndex = 116;
             this.b15.UseVisualStyleBackColor = false;
+            this.b15.Click += new System.EventHandler(this.BtnColumn1_Click);
             // 
             // b13
             // 
@@ -699,6 +695,7 @@
             this.b13.Size = new System.Drawing.Size(77, 77);
             this.b13.TabIndex = 117;
             this.b13.UseVisualStyleBackColor = false;
+            this.b13.Click += new System.EventHandler(this.BtnColumn1_Click);
             // 
             // b56
             // 
@@ -713,6 +710,7 @@
             this.b56.Size = new System.Drawing.Size(77, 77);
             this.b56.TabIndex = 123;
             this.b56.UseVisualStyleBackColor = false;
+            this.b56.Click += new System.EventHandler(this.BtnColumn5_Click);
             // 
             // b66
             // 
@@ -727,6 +725,7 @@
             this.b66.Size = new System.Drawing.Size(77, 77);
             this.b66.TabIndex = 124;
             this.b66.UseVisualStyleBackColor = false;
+            this.b66.Click += new System.EventHandler(this.btnColumn6_Click);
             // 
             // b73
             // 
@@ -741,6 +740,7 @@
             this.b73.Size = new System.Drawing.Size(77, 77);
             this.b73.TabIndex = 139;
             this.b73.UseVisualStyleBackColor = false;
+            this.b73.Click += new System.EventHandler(this.btnColumn7_Click);
             // 
             // b74
             // 
@@ -755,6 +755,7 @@
             this.b74.Size = new System.Drawing.Size(77, 77);
             this.b74.TabIndex = 129;
             this.b74.UseVisualStyleBackColor = false;
+            this.b74.Click += new System.EventHandler(this.btnColumn7_Click);
             // 
             // b53
             // 
@@ -769,6 +770,7 @@
             this.b53.Size = new System.Drawing.Size(77, 77);
             this.b53.TabIndex = 144;
             this.b53.UseVisualStyleBackColor = false;
+            this.b53.Click += new System.EventHandler(this.BtnColumn5_Click);
             // 
             // b33
             // 
@@ -783,6 +785,7 @@
             this.b33.Size = new System.Drawing.Size(77, 77);
             this.b33.TabIndex = 134;
             this.b33.UseVisualStyleBackColor = false;
+            this.b33.Click += new System.EventHandler(this.BtnColumn3_Click);
             // 
             // b76
             // 
@@ -797,6 +800,7 @@
             this.b76.Size = new System.Drawing.Size(77, 77);
             this.b76.TabIndex = 125;
             this.b76.UseVisualStyleBackColor = false;
+            this.b76.Click += new System.EventHandler(this.btnColumn7_Click);
             // 
             // b64
             // 
@@ -811,6 +815,7 @@
             this.b64.Size = new System.Drawing.Size(77, 77);
             this.b64.TabIndex = 128;
             this.b64.UseVisualStyleBackColor = false;
+            this.b64.Click += new System.EventHandler(this.btnColumn6_Click);
             // 
             // b25
             // 
@@ -825,6 +830,7 @@
             this.b25.Size = new System.Drawing.Size(77, 77);
             this.b25.TabIndex = 120;
             this.b25.UseVisualStyleBackColor = false;
+            this.b25.Click += new System.EventHandler(this.BtnColumn2_Click);
             // 
             // b65
             // 
@@ -839,6 +845,7 @@
             this.b65.Size = new System.Drawing.Size(77, 77);
             this.b65.TabIndex = 126;
             this.b65.UseVisualStyleBackColor = false;
+            this.b65.Click += new System.EventHandler(this.btnColumn6_Click);
             // 
             // b43
             // 
@@ -853,6 +860,7 @@
             this.b43.Size = new System.Drawing.Size(77, 77);
             this.b43.TabIndex = 141;
             this.b43.UseVisualStyleBackColor = false;
+            this.b43.Click += new System.EventHandler(this.BtnColumn4_Click);
             // 
             // b54
             // 
@@ -867,6 +875,7 @@
             this.b54.Size = new System.Drawing.Size(77, 77);
             this.b54.TabIndex = 145;
             this.b54.UseVisualStyleBackColor = false;
+            this.b54.Click += new System.EventHandler(this.BtnColumn5_Click);
             // 
             // b35
             // 
@@ -881,6 +890,7 @@
             this.b35.Size = new System.Drawing.Size(77, 77);
             this.b35.TabIndex = 136;
             this.b35.UseVisualStyleBackColor = false;
+            this.b35.Click += new System.EventHandler(this.BtnColumn3_Click);
             // 
             // b14
             // 
@@ -895,6 +905,7 @@
             this.b14.Size = new System.Drawing.Size(77, 77);
             this.b14.TabIndex = 118;
             this.b14.UseVisualStyleBackColor = false;
+            this.b14.Click += new System.EventHandler(this.BtnColumn1_Click);
             // 
             // b44
             // 
@@ -909,6 +920,7 @@
             this.b44.Size = new System.Drawing.Size(77, 77);
             this.b44.TabIndex = 140;
             this.b44.UseVisualStyleBackColor = false;
+            this.b44.Click += new System.EventHandler(this.BtnColumn4_Click);
             // 
             // b45
             // 
@@ -923,6 +935,7 @@
             this.b45.Size = new System.Drawing.Size(77, 77);
             this.b45.TabIndex = 150;
             this.b45.UseVisualStyleBackColor = false;
+            this.b45.Click += new System.EventHandler(this.BtnColumn4_Click);
             // 
             // b55
             // 
@@ -937,6 +950,7 @@
             this.b55.Size = new System.Drawing.Size(77, 77);
             this.b55.TabIndex = 146;
             this.b55.UseVisualStyleBackColor = false;
+            this.b55.Click += new System.EventHandler(this.BtnColumn5_Click);
             // 
             // b34
             // 
@@ -951,6 +965,7 @@
             this.b34.Size = new System.Drawing.Size(77, 77);
             this.b34.TabIndex = 135;
             this.b34.UseVisualStyleBackColor = false;
+            this.b34.Click += new System.EventHandler(this.BtnColumn3_Click);
             // 
             // b75
             // 
@@ -965,6 +980,33 @@
             this.b75.Size = new System.Drawing.Size(77, 77);
             this.b75.TabIndex = 127;
             this.b75.UseVisualStyleBackColor = false;
+            this.b75.Click += new System.EventHandler(this.btnColumn7_Click);
+            // 
+            // btnTurn
+            // 
+            this.btnTurn.BackColor = System.Drawing.Color.Red;
+            this.btnTurn.FlatAppearance.BorderSize = 0;
+            this.btnTurn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
+            this.btnTurn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.btnTurn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTurn.Location = new System.Drawing.Point(151, 78);
+            this.btnTurn.Name = "btnTurn";
+            this.btnTurn.Size = new System.Drawing.Size(30, 30);
+            this.btnTurn.TabIndex = 89;
+            this.btnTurn.UseVisualStyleBackColor = false;
+            // 
+            // btnOutLine
+            // 
+            this.btnOutLine.BackColor = System.Drawing.Color.Black;
+            this.btnOutLine.FlatAppearance.BorderSize = 0;
+            this.btnOutLine.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.btnOutLine.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.btnOutLine.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOutLine.Location = new System.Drawing.Point(149, 76);
+            this.btnOutLine.Name = "btnOutLine";
+            this.btnOutLine.Size = new System.Drawing.Size(34, 34);
+            this.btnOutLine.TabIndex = 88;
+            this.btnOutLine.UseVisualStyleBackColor = false;
             // 
             // ConnectFour
             // 
