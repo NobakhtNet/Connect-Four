@@ -44,7 +44,7 @@
             this.pnlHow.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlHow.Location = new System.Drawing.Point(0, 0);
             this.pnlHow.Name = "pnlHow";
-            this.pnlHow.Size = new System.Drawing.Size(500, 66);
+            this.pnlHow.Size = new System.Drawing.Size(500, 60);
             this.pnlHow.TabIndex = 0;
             // 
             // btnExit
@@ -75,7 +75,7 @@
             this.lblHow.ForeColor = System.Drawing.Color.Black;
             this.lblHow.Location = new System.Drawing.Point(0, 0);
             this.lblHow.Name = "lblHow";
-            this.lblHow.Size = new System.Drawing.Size(500, 66);
+            this.lblHow.Size = new System.Drawing.Size(500, 60);
             this.lblHow.TabIndex = 0;
             this.lblHow.Text = "How To Play :";
             this.lblHow.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -83,11 +83,11 @@
             // lblInstructions
             // 
             this.lblInstructions.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblInstructions.Font = new System.Drawing.Font("Gadugi", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInstructions.Font = new System.Drawing.Font("Gadugi", 14.75F);
             this.lblInstructions.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.lblInstructions.Location = new System.Drawing.Point(0, 66);
+            this.lblInstructions.Location = new System.Drawing.Point(0, 60);
             this.lblInstructions.Name = "lblInstructions";
-            this.lblInstructions.Size = new System.Drawing.Size(500, 234);
+            this.lblInstructions.Size = new System.Drawing.Size(500, 240);
             this.lblInstructions.TabIndex = 1;
             this.lblInstructions.Text = resources.GetString("lblInstructions.Text");
             this.lblInstructions.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -105,6 +105,7 @@
             this.Name = "HowToPlay";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "HowToPlay";
+            this.Load += new System.EventHandler(this.HowToPlay_Load);
             this.pnlHow.ResumeLayout(false);
             this.ResumeLayout(false);
 

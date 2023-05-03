@@ -8,6 +8,9 @@ namespace Connect_Four
 {
     public partial class Info : Form
     {
+        Point ParentTopLeft;
+        Size ParentSize;
+
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
         (
@@ -19,12 +22,30 @@ namespace Connect_Four
             int nHeightEllipse // height of ellipse
         );
 
-        public Info()
+        public Info(Point parentTopLeft, Size parentSize)
         {
             InitializeComponent();
 
             this.TopMost = true;
             Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 40, 40));
+            ParentTopLeft = parentTopLeft;
+            ParentSize = parentSize;
+        }
+        private void Info_Load(object sender, EventArgs e)
+        {
+            int tempY = (ParentSize.Height - this.Height) / 2;
+            int tempX = (ParentSize.Width - this.Width) / 2;
+            int newX = ParentTopLeft.X + tempX;
+            int newY = ParentTopLeft.Y + tempY;
+            if (newX < 0)
+            {
+                newX = 0;
+            }
+            if (newY < 0)
+            {
+                newY = 0;
+            }
+            this.Location = new Point(newX, newY);
         }
 
         private void btnExit_Click(object sender, EventArgs e)

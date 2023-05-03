@@ -11,16 +11,3 @@ D:\Coding\MyProjects\Connect Four\obj\Debug\Connect Four.exe
 D:\Coding\MyProjects\Connect Four\obj\Debug\Connect Four.pdb
 D:\Coding\MyProjects\Connect Four\obj\Debug\Connect_Four.HowToPlay.resources
 D:\Coding\MyProjects\Connect Four\obj\Debug\Connect_Four.Info.resources
-C:\Users\Asus\Documents\GitHub\Connect-Four\Connect Four\bin\Debug\Connect Four.exe.config
-C:\Users\Asus\Documents\GitHub\Connect-Four\Connect Four\bin\Debug\Connect Four.exe
-C:\Users\Asus\Documents\GitHub\Connect-Four\Connect Four\bin\Debug\Connect Four.pdb
-C:\Users\Asus\Documents\GitHub\Connect-Four\Connect Four\obj\Debug\Connect Four.csproj.AssemblyReference.cache
-C:\Users\Asus\Documents\GitHub\Connect-Four\Connect Four\obj\Debug\Connect Four.csproj.SuggestedBindingRedirects.cache
-C:\Users\Asus\Documents\GitHub\Connect-Four\Connect Four\obj\Debug\Connect_Four.ConnectFour.resources
-C:\Users\Asus\Documents\GitHub\Connect-Four\Connect Four\obj\Debug\Connect_Four.Info.resources
-C:\Users\Asus\Documents\GitHub\Connect-Four\Connect Four\obj\Debug\Connect_Four.HowToPlay.resources
-C:\Users\Asus\Documents\GitHub\Connect-Four\Connect Four\obj\Debug\Connect_Four.Properties.Resources.resources
-C:\Users\Asus\Documents\GitHub\Connect-Four\Connect Four\obj\Debug\Connect Four.csproj.GenerateResource.cache
-C:\Users\Asus\Documents\GitHub\Connect-Four\Connect Four\obj\Debug\Connect Four.csproj.CoreCompileInputs.cache
-C:\Users\Asus\Documents\GitHub\Connect-Four\Connect Four\obj\Debug\Connect Four.exe
-C:\Users\Asus\Documents\GitHub\Connect-Four\Connect Four\obj\Debug\Connect Four.pdb

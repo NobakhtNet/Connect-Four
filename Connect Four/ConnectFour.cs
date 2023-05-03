@@ -14,6 +14,7 @@ namespace Connect_Four
         bool gameEnded = false;
         HowToPlay how;
         Info info;
+        MessageBoxIcon icon = MessageBoxIcon.Error;
 
         private string ToBgr(Color c) => $"{c.B:X2}{c.G:X2}{c.R:X2}";
 
@@ -45,398 +46,70 @@ namespace Connect_Four
 
         private void BtnColumn1_Click(object sender, EventArgs g)
         {
-            if (gameEnded == false)
-            {
-                if (b11.BackColor == Color.OldLace)
-                {
-                    b11.BackColor = turn;
-                    b11.FlatAppearance.MouseOverBackColor = turn;
-                    b11.FlatAppearance.MouseDownBackColor = turn;
-                    moveCounter++;
-                }
-                else if (b12.BackColor == Color.OldLace)
-                {
-                    b12.BackColor = turn;
-                    b12.FlatAppearance.MouseOverBackColor = turn;
-                    b12.FlatAppearance.MouseDownBackColor = turn;
-                    moveCounter++;
-                }
-                else if (b13.BackColor == Color.OldLace)
-                {
-                    b13.BackColor = turn;
-                    b13.FlatAppearance.MouseOverBackColor = turn;
-                    b13.FlatAppearance.MouseDownBackColor = turn;
-                    moveCounter++;
-                }
-                else if (b14.BackColor == Color.OldLace)
-                {
-                    b14.BackColor = turn;
-                    b14.FlatAppearance.MouseOverBackColor = turn;
-                    b14.FlatAppearance.MouseDownBackColor = turn;
-                    moveCounter++;
-                }
-                else if (b15.BackColor == Color.OldLace)
-                {
-                    b15.BackColor = turn;
-                    b15.FlatAppearance.MouseOverBackColor = turn;
-                    b15.FlatAppearance.MouseDownBackColor = turn;
-                    moveCounter++;
-                }
-                else if (b16.BackColor == Color.OldLace)
-                {
-                    b16.BackColor = turn;
-                    b16.FlatAppearance.MouseOverBackColor = turn;
-                    b16.FlatAppearance.MouseDownBackColor = turn;
-                    moveCounter++;
-                }
 
-                a++;
-                if (a < 7)
-                {
-                    changeTurn();
-                    CheckForWinner();
-                }
-            }
         }
 
         private void BtnColumn2_Click(object sender, EventArgs e)
         {
-            if (gameEnded == false)
-            {
-                if (b21.BackColor == Color.OldLace)
-                {
-                    b21.BackColor = turn;
-                    b21.FlatAppearance.MouseOverBackColor = turn;
-                    b21.FlatAppearance.MouseDownBackColor = turn;
-                    moveCounter++;
-                }
-                else if (b22.BackColor == Color.OldLace)
-                {
-                    b22.BackColor = turn;
-                    b22.FlatAppearance.MouseOverBackColor = turn;
-                    b22.FlatAppearance.MouseDownBackColor = turn;
-                    moveCounter++;
-                }
-                else if (b23.BackColor == Color.OldLace)
-                {
-                    b23.BackColor = turn;
-                    b23.FlatAppearance.MouseOverBackColor = turn;
-                    b23.FlatAppearance.MouseDownBackColor = turn;
-                    moveCounter++;
-                }
-                else if (b24.BackColor == Color.OldLace)
-                {
-                    b24.BackColor = turn;
-                    b24.FlatAppearance.MouseOverBackColor = turn;
-                    b24.FlatAppearance.MouseDownBackColor = turn;
-                    moveCounter++;
-                }
-                else if (b25.BackColor == Color.OldLace)
-                {
-                    b25.BackColor = turn;
-                    b25.FlatAppearance.MouseOverBackColor = turn;
-                    b25.FlatAppearance.MouseDownBackColor = turn;
-                    moveCounter++;
-                }
-                else if (b26.BackColor == Color.OldLace)
-                {
-                    b26.BackColor = turn;
-                    b26.FlatAppearance.MouseOverBackColor = turn;
-                    b26.FlatAppearance.MouseDownBackColor = turn;
-                    moveCounter++;
-                }
 
-                b++;
-                if (b < 7)
-                {
-                    changeTurn();
-                    CheckForWinner();
-                }
-            }
         }
 
         private void BtnColumn3_Click(object sender, EventArgs e)
         {
-            if (gameEnded == false)
-            {
-                if (b31.BackColor == Color.OldLace)
-                {
-                    b31.BackColor = turn;
-                    b31.FlatAppearance.MouseOverBackColor = turn;
-                    b31.FlatAppearance.MouseDownBackColor = turn;
-                    moveCounter++;
-                }
-                else if (b32.BackColor == Color.OldLace)
-                {
-                    b32.BackColor = turn;
-                    b32.FlatAppearance.MouseOverBackColor = turn;
-                    b32.FlatAppearance.MouseDownBackColor = turn;
-                    moveCounter++;
-                }
-                else if (b33.BackColor == Color.OldLace)
-                {
-                    b33.BackColor = turn;
-                    b33.FlatAppearance.MouseOverBackColor = turn;
-                    b33.FlatAppearance.MouseDownBackColor = turn;
-                    moveCounter++;
-                }
-                else if (b34.BackColor == Color.OldLace)
-                {
-                    b34.BackColor = turn;
-                    b34.FlatAppearance.MouseOverBackColor = turn;
-                    b34.FlatAppearance.MouseDownBackColor = turn;
-                    moveCounter++;
-                }
-                else if (b35.BackColor == Color.OldLace)
-                {
-                    b35.BackColor = turn;
-                    b35.FlatAppearance.MouseOverBackColor = turn;
-                    b35.FlatAppearance.MouseDownBackColor = turn;
-                    moveCounter++;
-                }
-                else if (b36.BackColor == Color.OldLace)
-                {
-                    b36.BackColor = turn;
-                    b36.FlatAppearance.MouseOverBackColor = turn;
-                    b36.FlatAppearance.MouseDownBackColor = turn;
-                    moveCounter++;
-                }
 
-                c++;
-                if (c < 7)
-                {
-                    changeTurn();
-                    CheckForWinner();
-                }
-            }
         }
 
         private void BtnColumn4_Click(object sender, EventArgs e)
         {
-            if (gameEnded == false)
-            {
-                if (b41.BackColor == Color.OldLace)
-                {
-                    b41.BackColor = turn;
-                    b41.FlatAppearance.MouseOverBackColor = turn;
-                    b41.FlatAppearance.MouseDownBackColor = turn;
-                    moveCounter++;
-                }
-                else if (b42.BackColor == Color.OldLace)
-                {
-                    b42.BackColor = turn;
-                    b42.FlatAppearance.MouseOverBackColor = turn;
-                    b42.FlatAppearance.MouseDownBackColor = turn;
-                    moveCounter++;
-                }
-                else if (b43.BackColor == Color.OldLace)
-                {
-                    b43.BackColor = turn;
-                    b43.FlatAppearance.MouseOverBackColor = turn;
-                    b43.FlatAppearance.MouseDownBackColor = turn;
-                    moveCounter++;
-                }
-                else if (b44.BackColor == Color.OldLace)
-                {
-                    b44.BackColor = turn;
-                    b44.FlatAppearance.MouseOverBackColor = turn;
-                    b44.FlatAppearance.MouseDownBackColor = turn;
-                    moveCounter++;
-                }
-                else if (b45.BackColor == Color.OldLace)
-                {
-                    b45.BackColor = turn;
-                    b45.FlatAppearance.MouseOverBackColor = turn;
-                    b45.FlatAppearance.MouseDownBackColor = turn;
-                    moveCounter++;
-                }
-                else if (b46.BackColor == Color.OldLace)
-                {
-                    b46.BackColor = turn;
-                    b46.FlatAppearance.MouseOverBackColor = turn;
-                    b46.FlatAppearance.MouseDownBackColor = turn;
-                    moveCounter++;
-                }
 
-                d++;
-                if (d < 7)
-                {
-                    changeTurn();
-                    CheckForWinner();
-                }
-            }
         }
 
         private void BtnColumn5_Click(object sender, EventArgs e)
         {
-            if (gameEnded == false)
-            {
-                if (b51.BackColor == Color.OldLace)
-                {
-                    b51.BackColor = turn;
-                    b51.FlatAppearance.MouseOverBackColor = turn;
-                    b51.FlatAppearance.MouseDownBackColor = turn;
-                    moveCounter++;
-                }
-                else if (b52.BackColor == Color.OldLace)
-                {
-                    b52.BackColor = turn;
-                    b52.FlatAppearance.MouseOverBackColor = turn;
-                    b52.FlatAppearance.MouseDownBackColor = turn;
-                    moveCounter++;
-                }
-                else if (b53.BackColor == Color.OldLace)
-                {
-                    b53.BackColor = turn;
-                    b53.FlatAppearance.MouseOverBackColor = turn;
-                    b53.FlatAppearance.MouseDownBackColor = turn;
-                    moveCounter++;
-                }
-                else if (b54.BackColor == Color.OldLace)
-                {
-                    b54.BackColor = turn;
-                    b54.FlatAppearance.MouseOverBackColor = turn;
-                    b54.FlatAppearance.MouseDownBackColor = turn;
-                    moveCounter++;
-                }
-                else if (b55.BackColor == Color.OldLace)
-                {
-                    b55.BackColor = turn;
-                    b55.FlatAppearance.MouseOverBackColor = turn;
-                    b55.FlatAppearance.MouseDownBackColor = turn;
-                    moveCounter++;
-                }
-                else if (b56.BackColor == Color.OldLace)
-                {
-                    b56.BackColor = turn;
-                    b56.FlatAppearance.MouseOverBackColor = turn;
-                    b56.FlatAppearance.MouseDownBackColor = turn;
-                    moveCounter++;
-                }
 
-                f++;
-                if (f < 7)
-                {
-                    changeTurn();
-                    CheckForWinner();
-                }
-            }
         }
 
         private void btnColumn6_Click(object sender, EventArgs e)
         {
-            if (gameEnded == false)
-            {
-                if (b61.BackColor == Color.OldLace)
-                {
-                    b61.BackColor = turn;
-                    b61.FlatAppearance.MouseOverBackColor = turn;
-                    b61.FlatAppearance.MouseDownBackColor = turn;
-                    moveCounter++;
-                }
-                else if (b62.BackColor == Color.OldLace)
-                {
-                    b62.BackColor = turn;
-                    b62.FlatAppearance.MouseOverBackColor = turn;
-                    b62.FlatAppearance.MouseDownBackColor = turn;
-                    moveCounter++;
-                }
-                else if (b63.BackColor == Color.OldLace)
-                {
-                    b63.BackColor = turn;
-                    b63.FlatAppearance.MouseOverBackColor = turn;
-                    b63.FlatAppearance.MouseDownBackColor = turn;
-                    moveCounter++;
-                }
-                else if (b64.BackColor == Color.OldLace)
-                {
-                    b64.BackColor = turn;
-                    b64.FlatAppearance.MouseOverBackColor = turn;
-                    b64.FlatAppearance.MouseDownBackColor = turn;
-                    moveCounter++;
-                }
-                else if (b65.BackColor == Color.OldLace)
-                {
-                    b65.BackColor = turn;
-                    b65.FlatAppearance.MouseOverBackColor = turn;
-                    b65.FlatAppearance.MouseDownBackColor = turn;
-                    moveCounter++;
-                }
-                else if (b66.BackColor == Color.OldLace)
-                {
-                    b66.BackColor = turn;
-                    b66.FlatAppearance.MouseOverBackColor = turn;
-                    b66.FlatAppearance.MouseDownBackColor = turn;
-                    moveCounter++;
-                }
 
-                g++;
-                if (g < 7)
-                {
-                    changeTurn();
-                    CheckForWinner();
-                }
-            }
         }
 
         private void btnColumn7_Click(object sender, EventArgs e)
         {
-            if (gameEnded == false)
-            {
-                if (b71.BackColor == Color.OldLace)
-                {
-                    b71.BackColor = turn;
-                    b71.FlatAppearance.MouseOverBackColor = turn;
-                    b71.FlatAppearance.MouseDownBackColor = turn;
-                    moveCounter++;
-                }
-                else if (b72.BackColor == Color.OldLace)
-                {
-                    b72.BackColor = turn;
-                    b72.FlatAppearance.MouseOverBackColor = turn;
-                    b72.FlatAppearance.MouseDownBackColor = turn;
-                    moveCounter++;
-                }
-                else if (b73.BackColor == Color.OldLace)
-                {
-                    b73.BackColor = turn;
-                    b73.FlatAppearance.MouseOverBackColor = turn;
-                    b73.FlatAppearance.MouseDownBackColor = turn;
-                    moveCounter++;
-                }
-                else if (b74.BackColor == Color.OldLace)
-                {
-                    b74.BackColor = turn;
-                    b74.FlatAppearance.MouseOverBackColor = turn;
-                    b74.FlatAppearance.MouseDownBackColor = turn;
-                    moveCounter++;
-                }
-                else if (b75.BackColor == Color.OldLace)
-                {
-                    b75.BackColor = turn;
-                    b75.FlatAppearance.MouseOverBackColor = turn;
-                    b75.FlatAppearance.MouseDownBackColor = turn;
-                    moveCounter++;
-                }
-                else if (b76.BackColor == Color.OldLace)
-                {
-                    b76.BackColor = turn;
-                    b76.FlatAppearance.MouseOverBackColor = turn;
-                    b76.FlatAppearance.MouseDownBackColor = turn;
-                    moveCounter++;
-                }
 
-                h++;
-                if (h < 7)
-                {
-                    changeTurn();
-                    CheckForWinner();
-                }
-            }
+        }
+
+        private void ConnectFour_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.D1 || e.KeyCode == Keys.NumPad1)
+                b11.PerformClick();
+
+            if (e.KeyCode == Keys.D2 || e.KeyCode == Keys.NumPad2)
+                b21.PerformClick();
+
+            if (e.KeyCode == Keys.D3 || e.KeyCode == Keys.NumPad3)
+                b31.PerformClick();
+
+            if (e.KeyCode == Keys.D4 || e.KeyCode == Keys.NumPad4)
+                b41.PerformClick();
+
+            if (e.KeyCode == Keys.D5 || e.KeyCode == Keys.NumPad5)
+                b51.PerformClick();
+
+            if (e.KeyCode == Keys.D6 || e.KeyCode == Keys.NumPad6)
+                b61.PerformClick();
+
+            if (e.KeyCode == Keys.D7 || e.KeyCode == Keys.NumPad7)
+                b71.PerformClick();
+
+            if (e.KeyCode == Keys.R)
+                btnRestart.PerformClick();
         }
 
         private void changeTurn()
         {
+            UpdateStatus();
+
             if (turn == Color.Red)
                 turn = Color.Yellow;
             else
@@ -476,8 +149,6 @@ namespace Connect_Four
 
         private void CheckForWinner()
         {
-            UpdateStatus();
-
             #region Rows
             if ((b11.BackColor == b21.BackColor && b21.BackColor == b31.BackColor && b31.BackColor == b41.BackColor && b11.BackColor != Color.OldLace) ||
                 (b21.BackColor == b31.BackColor && b31.BackColor == b41.BackColor && b41.BackColor == b51.BackColor && b21.BackColor != Color.OldLace) ||
@@ -558,7 +229,6 @@ namespace Connect_Four
             {
                 gameEnded = true;
 
-                MessageBoxIcon icon = MessageBoxIcon.Error;
                 if (whoWon == "Red")
                 {
                     R++;
@@ -599,13 +269,13 @@ namespace Connect_Four
         {
             if (how == null)
             {
-                how = new HowToPlay();
-                how.Location = new Point(this.Left + 180, this.Top + 140);
+                how = new HowToPlay(this.Location, this.Size);
                 how.Show();
             }
             else
             {
-                how.Location = new Point(this.Left + 180, this.Top + 140);
+                how.Hide();
+                how = new HowToPlay(this.Location, this.Size);
                 how.Show();
                 how.Activate();
             }
@@ -615,13 +285,13 @@ namespace Connect_Four
         {
             if (info == null)
             {
-                info = new Info();
-                info.Location = new Point(this.Left + 180, this.Top + 140);
+                info = new Info(this.Location, this.Size);
                 info.Show();
             }
             else
             {
-                info.Location = new Point(this.Left + 180, this.Top + 140);
+                info.Hide();
+                info = new Info(this.Location, this.Size);
                 info.Show();
                 info.Activate();
             }

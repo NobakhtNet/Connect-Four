@@ -59,7 +59,6 @@
     <Compile Include="ConnectFour.Designer.cs">
       <DependentUpon>ConnectFour.cs</DependentUpon>
     </Compile>
-    <Compile Include="Handle.cs" />
     <Compile Include="Info.cs">
       <SubType>Form</SubType>
     </Compile>

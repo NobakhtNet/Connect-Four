@@ -146,7 +146,7 @@
             this.pnlInfo.Controls.Add(this.pnlTitle);
             this.pnlInfo.Controls.Add(this.lblLine);
             this.pnlInfo.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlInfo.Location = new System.Drawing.Point(604, 0);
+            this.pnlInfo.Location = new System.Drawing.Point(607, 0);
             this.pnlInfo.Name = "pnlInfo";
             this.pnlInfo.Size = new System.Drawing.Size(250, 520);
             this.pnlInfo.TabIndex = 0;
@@ -301,21 +301,21 @@
             // 
             this.tblConnect4.BackColor = System.Drawing.Color.Transparent;
             this.tblConnect4.ColumnCount = 15;
-            this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.250001F));
-            this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.14069F));
-            this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.00253F));
-            this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.14069F));
-            this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.00253F));
-            this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.14069F));
-            this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.00253F));
-            this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.14069F));
-            this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.00253F));
-            this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.14069F));
-            this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.00253F));
-            this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.14069F));
-            this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.00253F));
-            this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.14069F));
-            this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.7500008F));
+            this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 5F));
+            this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.83452F));
+            this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.5263999F));
+            this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.83452F));
+            this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.5263999F));
+            this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.83452F));
+            this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.5263999F));
+            this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.83451F));
+            this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.5263999F));
+            this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.83452F));
+            this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.5264F));
+            this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.83452F));
+            this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.5263999F));
+            this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.83451F));
+            this.tblConnect4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 1F));
             this.tblConnect4.Controls.Add(this.b71, 13, 11);
             this.tblConnect4.Controls.Add(this.b31, 5, 11);
             this.tblConnect4.Controls.Add(this.b61, 11, 11);
@@ -362,21 +362,21 @@
             this.tblConnect4.Location = new System.Drawing.Point(0, 0);
             this.tblConnect4.Name = "tblConnect4";
             this.tblConnect4.RowCount = 13;
-            this.tblConnect4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.250054F));
-            this.tblConnect4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.49816F));
-            this.tblConnect4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.002195F));
-            this.tblConnect4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.49816F));
-            this.tblConnect4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.002195F));
-            this.tblConnect4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.49816F));
-            this.tblConnect4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.002195F));
-            this.tblConnect4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.49816F));
-            this.tblConnect4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.002195F));
-            this.tblConnect4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.49816F));
-            this.tblConnect4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.002195F));
-            this.tblConnect4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.49816F));
-            this.tblConnect4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0.7500322F));
-            this.tblConnect4.Size = new System.Drawing.Size(604, 520);
-            this.tblConnect4.TabIndex = 74;
+            this.tblConnect4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 5F));
+            this.tblConnect4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.19776F));
+            this.tblConnect4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0.5225704F));
+            this.tblConnect4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.19776F));
+            this.tblConnect4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0.5225704F));
+            this.tblConnect4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.19776F));
+            this.tblConnect4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0.5225704F));
+            this.tblConnect4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.19776F));
+            this.tblConnect4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0.5225704F));
+            this.tblConnect4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.19776F));
+            this.tblConnect4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0.5225704F));
+            this.tblConnect4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.19775F));
+            this.tblConnect4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0.2005968F));
+            this.tblConnect4.Size = new System.Drawing.Size(607, 520);
+            this.tblConnect4.TabIndex = 75;
             // 
             // b71
             // 
@@ -386,12 +386,11 @@
             this.b71.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OldLace;
             this.b71.FlatAppearance.MouseOverBackColor = System.Drawing.Color.OldLace;
             this.b71.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b71.Location = new System.Drawing.Point(520, 434);
+            this.b71.Location = new System.Drawing.Point(524, 433);
             this.b71.Name = "b71";
-            this.b71.Size = new System.Drawing.Size(73, 74);
+            this.b71.Size = new System.Drawing.Size(77, 77);
             this.b71.TabIndex = 147;
             this.b71.UseVisualStyleBackColor = false;
-            this.b71.Click += new System.EventHandler(this.btnColumn7_Click);
             // 
             // b31
             // 
@@ -401,12 +400,11 @@
             this.b31.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OldLace;
             this.b31.FlatAppearance.MouseOverBackColor = System.Drawing.Color.OldLace;
             this.b31.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b31.Location = new System.Drawing.Point(180, 434);
+            this.b31.Location = new System.Drawing.Point(180, 433);
             this.b31.Name = "b31";
-            this.b31.Size = new System.Drawing.Size(73, 74);
+            this.b31.Size = new System.Drawing.Size(77, 77);
             this.b31.TabIndex = 132;
             this.b31.UseVisualStyleBackColor = false;
-            this.b31.Click += new System.EventHandler(this.BtnColumn3_Click);
             // 
             // b61
             // 
@@ -416,12 +414,11 @@
             this.b61.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OldLace;
             this.b61.FlatAppearance.MouseOverBackColor = System.Drawing.Color.OldLace;
             this.b61.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b61.Location = new System.Drawing.Point(435, 434);
+            this.b61.Location = new System.Drawing.Point(438, 433);
             this.b61.Name = "b61";
-            this.b61.Size = new System.Drawing.Size(73, 74);
+            this.b61.Size = new System.Drawing.Size(77, 77);
             this.b61.TabIndex = 148;
             this.b61.UseVisualStyleBackColor = false;
-            this.b61.Click += new System.EventHandler(this.btnColumn6_Click);
             // 
             // b11
             // 
@@ -431,12 +428,11 @@
             this.b11.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OldLace;
             this.b11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.OldLace;
             this.b11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b11.Location = new System.Drawing.Point(10, 434);
+            this.b11.Location = new System.Drawing.Point(8, 433);
             this.b11.Name = "b11";
-            this.b11.Size = new System.Drawing.Size(73, 74);
+            this.b11.Size = new System.Drawing.Size(77, 77);
             this.b11.TabIndex = 74;
             this.b11.UseVisualStyleBackColor = false;
-            this.b11.Click += new System.EventHandler(this.BtnColumn1_Click);
             // 
             // b51
             // 
@@ -446,12 +442,11 @@
             this.b51.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OldLace;
             this.b51.FlatAppearance.MouseOverBackColor = System.Drawing.Color.OldLace;
             this.b51.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b51.Location = new System.Drawing.Point(350, 434);
+            this.b51.Location = new System.Drawing.Point(352, 433);
             this.b51.Name = "b51";
-            this.b51.Size = new System.Drawing.Size(73, 74);
+            this.b51.Size = new System.Drawing.Size(77, 77);
             this.b51.TabIndex = 142;
             this.b51.UseVisualStyleBackColor = false;
-            this.b51.Click += new System.EventHandler(this.BtnColumn5_Click);
             // 
             // b41
             // 
@@ -461,12 +456,11 @@
             this.b41.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OldLace;
             this.b41.FlatAppearance.MouseOverBackColor = System.Drawing.Color.OldLace;
             this.b41.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b41.Location = new System.Drawing.Point(265, 434);
+            this.b41.Location = new System.Drawing.Point(266, 433);
             this.b41.Name = "b41";
-            this.b41.Size = new System.Drawing.Size(73, 74);
+            this.b41.Size = new System.Drawing.Size(77, 77);
             this.b41.TabIndex = 137;
             this.b41.UseVisualStyleBackColor = false;
-            this.b41.Click += new System.EventHandler(this.BtnColumn4_Click);
             // 
             // b21
             // 
@@ -476,12 +470,11 @@
             this.b21.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OldLace;
             this.b21.FlatAppearance.MouseOverBackColor = System.Drawing.Color.OldLace;
             this.b21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b21.Location = new System.Drawing.Point(95, 434);
+            this.b21.Location = new System.Drawing.Point(94, 433);
             this.b21.Name = "b21";
-            this.b21.Size = new System.Drawing.Size(73, 74);
+            this.b21.Size = new System.Drawing.Size(77, 77);
             this.b21.TabIndex = 151;
             this.b21.UseVisualStyleBackColor = false;
-            this.b21.Click += new System.EventHandler(this.BtnColumn2_Click);
             // 
             // b16
             // 
@@ -491,12 +484,11 @@
             this.b16.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OldLace;
             this.b16.FlatAppearance.MouseOverBackColor = System.Drawing.Color.OldLace;
             this.b16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b16.Location = new System.Drawing.Point(10, 9);
+            this.b16.Location = new System.Drawing.Point(8, 8);
             this.b16.Name = "b16";
-            this.b16.Size = new System.Drawing.Size(73, 74);
+            this.b16.Size = new System.Drawing.Size(77, 77);
             this.b16.TabIndex = 115;
             this.b16.UseVisualStyleBackColor = false;
-            this.b16.Click += new System.EventHandler(this.BtnColumn1_Click);
             // 
             // b32
             // 
@@ -506,12 +498,11 @@
             this.b32.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OldLace;
             this.b32.FlatAppearance.MouseOverBackColor = System.Drawing.Color.OldLace;
             this.b32.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b32.Location = new System.Drawing.Point(180, 349);
+            this.b32.Location = new System.Drawing.Point(180, 348);
             this.b32.Name = "b32";
-            this.b32.Size = new System.Drawing.Size(73, 74);
+            this.b32.Size = new System.Drawing.Size(77, 77);
             this.b32.TabIndex = 133;
             this.b32.UseVisualStyleBackColor = false;
-            this.b32.Click += new System.EventHandler(this.BtnColumn3_Click);
             // 
             // b12
             // 
@@ -521,12 +512,11 @@
             this.b12.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OldLace;
             this.b12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.OldLace;
             this.b12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b12.Location = new System.Drawing.Point(10, 349);
+            this.b12.Location = new System.Drawing.Point(8, 348);
             this.b12.Name = "b12";
-            this.b12.Size = new System.Drawing.Size(73, 74);
+            this.b12.Size = new System.Drawing.Size(77, 77);
             this.b12.TabIndex = 155;
             this.b12.UseVisualStyleBackColor = false;
-            this.b12.Click += new System.EventHandler(this.BtnColumn1_Click);
             // 
             // b22
             // 
@@ -536,12 +526,11 @@
             this.b22.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OldLace;
             this.b22.FlatAppearance.MouseOverBackColor = System.Drawing.Color.OldLace;
             this.b22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b22.Location = new System.Drawing.Point(95, 349);
+            this.b22.Location = new System.Drawing.Point(94, 348);
             this.b22.Name = "b22";
-            this.b22.Size = new System.Drawing.Size(73, 74);
+            this.b22.Size = new System.Drawing.Size(77, 77);
             this.b22.TabIndex = 152;
             this.b22.UseVisualStyleBackColor = false;
-            this.b22.Click += new System.EventHandler(this.BtnColumn2_Click);
             // 
             // b26
             // 
@@ -551,12 +540,11 @@
             this.b26.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OldLace;
             this.b26.FlatAppearance.MouseOverBackColor = System.Drawing.Color.OldLace;
             this.b26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b26.Location = new System.Drawing.Point(95, 9);
+            this.b26.Location = new System.Drawing.Point(94, 8);
             this.b26.Name = "b26";
-            this.b26.Size = new System.Drawing.Size(73, 74);
+            this.b26.Size = new System.Drawing.Size(77, 77);
             this.b26.TabIndex = 119;
             this.b26.UseVisualStyleBackColor = false;
-            this.b26.Click += new System.EventHandler(this.BtnColumn2_Click);
             // 
             // b52
             // 
@@ -566,12 +554,11 @@
             this.b52.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OldLace;
             this.b52.FlatAppearance.MouseOverBackColor = System.Drawing.Color.OldLace;
             this.b52.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b52.Location = new System.Drawing.Point(350, 349);
+            this.b52.Location = new System.Drawing.Point(352, 348);
             this.b52.Name = "b52";
-            this.b52.Size = new System.Drawing.Size(73, 74);
+            this.b52.Size = new System.Drawing.Size(77, 77);
             this.b52.TabIndex = 143;
             this.b52.UseVisualStyleBackColor = false;
-            this.b52.Click += new System.EventHandler(this.BtnColumn5_Click);
             // 
             // b42
             // 
@@ -581,12 +568,11 @@
             this.b42.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OldLace;
             this.b42.FlatAppearance.MouseOverBackColor = System.Drawing.Color.OldLace;
             this.b42.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b42.Location = new System.Drawing.Point(265, 349);
+            this.b42.Location = new System.Drawing.Point(266, 348);
             this.b42.Name = "b42";
-            this.b42.Size = new System.Drawing.Size(73, 74);
+            this.b42.Size = new System.Drawing.Size(77, 77);
             this.b42.TabIndex = 138;
             this.b42.UseVisualStyleBackColor = false;
-            this.b42.Click += new System.EventHandler(this.BtnColumn4_Click);
             // 
             // b72
             // 
@@ -596,12 +582,11 @@
             this.b72.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OldLace;
             this.b72.FlatAppearance.MouseOverBackColor = System.Drawing.Color.OldLace;
             this.b72.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b72.Location = new System.Drawing.Point(520, 349);
+            this.b72.Location = new System.Drawing.Point(524, 348);
             this.b72.Name = "b72";
-            this.b72.Size = new System.Drawing.Size(73, 74);
+            this.b72.Size = new System.Drawing.Size(77, 77);
             this.b72.TabIndex = 149;
             this.b72.UseVisualStyleBackColor = false;
-            this.b72.Click += new System.EventHandler(this.btnColumn7_Click);
             // 
             // b62
             // 
@@ -611,12 +596,11 @@
             this.b62.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OldLace;
             this.b62.FlatAppearance.MouseOverBackColor = System.Drawing.Color.OldLace;
             this.b62.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b62.Location = new System.Drawing.Point(435, 349);
+            this.b62.Location = new System.Drawing.Point(438, 348);
             this.b62.Name = "b62";
-            this.b62.Size = new System.Drawing.Size(73, 74);
+            this.b62.Size = new System.Drawing.Size(77, 77);
             this.b62.TabIndex = 131;
             this.b62.UseVisualStyleBackColor = false;
-            this.b62.Click += new System.EventHandler(this.btnColumn6_Click);
             // 
             // b23
             // 
@@ -626,12 +610,11 @@
             this.b23.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OldLace;
             this.b23.FlatAppearance.MouseOverBackColor = System.Drawing.Color.OldLace;
             this.b23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b23.Location = new System.Drawing.Point(95, 264);
+            this.b23.Location = new System.Drawing.Point(94, 263);
             this.b23.Name = "b23";
-            this.b23.Size = new System.Drawing.Size(73, 74);
+            this.b23.Size = new System.Drawing.Size(77, 77);
             this.b23.TabIndex = 153;
             this.b23.UseVisualStyleBackColor = false;
-            this.b23.Click += new System.EventHandler(this.BtnColumn2_Click);
             // 
             // b24
             // 
@@ -641,12 +624,11 @@
             this.b24.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OldLace;
             this.b24.FlatAppearance.MouseOverBackColor = System.Drawing.Color.OldLace;
             this.b24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b24.Location = new System.Drawing.Point(95, 179);
+            this.b24.Location = new System.Drawing.Point(94, 178);
             this.b24.Name = "b24";
-            this.b24.Size = new System.Drawing.Size(73, 74);
+            this.b24.Size = new System.Drawing.Size(77, 77);
             this.b24.TabIndex = 154;
             this.b24.UseVisualStyleBackColor = false;
-            this.b24.Click += new System.EventHandler(this.BtnColumn2_Click);
             // 
             // b36
             // 
@@ -656,12 +638,11 @@
             this.b36.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OldLace;
             this.b36.FlatAppearance.MouseOverBackColor = System.Drawing.Color.OldLace;
             this.b36.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b36.Location = new System.Drawing.Point(180, 9);
+            this.b36.Location = new System.Drawing.Point(180, 8);
             this.b36.Name = "b36";
-            this.b36.Size = new System.Drawing.Size(73, 74);
+            this.b36.Size = new System.Drawing.Size(77, 77);
             this.b36.TabIndex = 121;
             this.b36.UseVisualStyleBackColor = false;
-            this.b36.Click += new System.EventHandler(this.BtnColumn3_Click);
             // 
             // b46
             // 
@@ -671,12 +652,11 @@
             this.b46.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OldLace;
             this.b46.FlatAppearance.MouseOverBackColor = System.Drawing.Color.OldLace;
             this.b46.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b46.Location = new System.Drawing.Point(265, 9);
+            this.b46.Location = new System.Drawing.Point(266, 8);
             this.b46.Name = "b46";
-            this.b46.Size = new System.Drawing.Size(73, 74);
+            this.b46.Size = new System.Drawing.Size(77, 77);
             this.b46.TabIndex = 122;
             this.b46.UseVisualStyleBackColor = false;
-            this.b46.Click += new System.EventHandler(this.BtnColumn4_Click);
             // 
             // b63
             // 
@@ -686,12 +666,11 @@
             this.b63.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OldLace;
             this.b63.FlatAppearance.MouseOverBackColor = System.Drawing.Color.OldLace;
             this.b63.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b63.Location = new System.Drawing.Point(435, 264);
+            this.b63.Location = new System.Drawing.Point(438, 263);
             this.b63.Name = "b63";
-            this.b63.Size = new System.Drawing.Size(73, 74);
+            this.b63.Size = new System.Drawing.Size(77, 77);
             this.b63.TabIndex = 130;
             this.b63.UseVisualStyleBackColor = false;
-            this.b63.Click += new System.EventHandler(this.btnColumn6_Click);
             // 
             // b15
             // 
@@ -701,12 +680,11 @@
             this.b15.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OldLace;
             this.b15.FlatAppearance.MouseOverBackColor = System.Drawing.Color.OldLace;
             this.b15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b15.Location = new System.Drawing.Point(10, 94);
+            this.b15.Location = new System.Drawing.Point(8, 93);
             this.b15.Name = "b15";
-            this.b15.Size = new System.Drawing.Size(73, 74);
+            this.b15.Size = new System.Drawing.Size(77, 77);
             this.b15.TabIndex = 116;
             this.b15.UseVisualStyleBackColor = false;
-            this.b15.Click += new System.EventHandler(this.BtnColumn1_Click);
             // 
             // b13
             // 
@@ -716,12 +694,11 @@
             this.b13.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OldLace;
             this.b13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.OldLace;
             this.b13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b13.Location = new System.Drawing.Point(10, 264);
+            this.b13.Location = new System.Drawing.Point(8, 263);
             this.b13.Name = "b13";
-            this.b13.Size = new System.Drawing.Size(73, 74);
+            this.b13.Size = new System.Drawing.Size(77, 77);
             this.b13.TabIndex = 117;
             this.b13.UseVisualStyleBackColor = false;
-            this.b13.Click += new System.EventHandler(this.BtnColumn1_Click);
             // 
             // b56
             // 
@@ -731,12 +708,11 @@
             this.b56.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OldLace;
             this.b56.FlatAppearance.MouseOverBackColor = System.Drawing.Color.OldLace;
             this.b56.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b56.Location = new System.Drawing.Point(350, 9);
+            this.b56.Location = new System.Drawing.Point(352, 8);
             this.b56.Name = "b56";
-            this.b56.Size = new System.Drawing.Size(73, 74);
+            this.b56.Size = new System.Drawing.Size(77, 77);
             this.b56.TabIndex = 123;
             this.b56.UseVisualStyleBackColor = false;
-            this.b56.Click += new System.EventHandler(this.BtnColumn5_Click);
             // 
             // b66
             // 
@@ -746,12 +722,11 @@
             this.b66.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OldLace;
             this.b66.FlatAppearance.MouseOverBackColor = System.Drawing.Color.OldLace;
             this.b66.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b66.Location = new System.Drawing.Point(435, 9);
+            this.b66.Location = new System.Drawing.Point(438, 8);
             this.b66.Name = "b66";
-            this.b66.Size = new System.Drawing.Size(73, 74);
+            this.b66.Size = new System.Drawing.Size(77, 77);
             this.b66.TabIndex = 124;
             this.b66.UseVisualStyleBackColor = false;
-            this.b66.Click += new System.EventHandler(this.btnColumn6_Click);
             // 
             // b73
             // 
@@ -761,12 +736,11 @@
             this.b73.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OldLace;
             this.b73.FlatAppearance.MouseOverBackColor = System.Drawing.Color.OldLace;
             this.b73.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b73.Location = new System.Drawing.Point(520, 264);
+            this.b73.Location = new System.Drawing.Point(524, 263);
             this.b73.Name = "b73";
-            this.b73.Size = new System.Drawing.Size(73, 74);
+            this.b73.Size = new System.Drawing.Size(77, 77);
             this.b73.TabIndex = 139;
             this.b73.UseVisualStyleBackColor = false;
-            this.b73.Click += new System.EventHandler(this.btnColumn7_Click);
             // 
             // b74
             // 
@@ -776,12 +750,11 @@
             this.b74.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OldLace;
             this.b74.FlatAppearance.MouseOverBackColor = System.Drawing.Color.OldLace;
             this.b74.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b74.Location = new System.Drawing.Point(520, 179);
+            this.b74.Location = new System.Drawing.Point(524, 178);
             this.b74.Name = "b74";
-            this.b74.Size = new System.Drawing.Size(73, 74);
+            this.b74.Size = new System.Drawing.Size(77, 77);
             this.b74.TabIndex = 129;
             this.b74.UseVisualStyleBackColor = false;
-            this.b74.Click += new System.EventHandler(this.btnColumn7_Click);
             // 
             // b53
             // 
@@ -791,12 +764,11 @@
             this.b53.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OldLace;
             this.b53.FlatAppearance.MouseOverBackColor = System.Drawing.Color.OldLace;
             this.b53.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b53.Location = new System.Drawing.Point(350, 264);
+            this.b53.Location = new System.Drawing.Point(352, 263);
             this.b53.Name = "b53";
-            this.b53.Size = new System.Drawing.Size(73, 74);
+            this.b53.Size = new System.Drawing.Size(77, 77);
             this.b53.TabIndex = 144;
             this.b53.UseVisualStyleBackColor = false;
-            this.b53.Click += new System.EventHandler(this.BtnColumn5_Click);
             // 
             // b33
             // 
@@ -806,12 +778,11 @@
             this.b33.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OldLace;
             this.b33.FlatAppearance.MouseOverBackColor = System.Drawing.Color.OldLace;
             this.b33.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b33.Location = new System.Drawing.Point(180, 264);
+            this.b33.Location = new System.Drawing.Point(180, 263);
             this.b33.Name = "b33";
-            this.b33.Size = new System.Drawing.Size(73, 74);
+            this.b33.Size = new System.Drawing.Size(77, 77);
             this.b33.TabIndex = 134;
             this.b33.UseVisualStyleBackColor = false;
-            this.b33.Click += new System.EventHandler(this.BtnColumn3_Click);
             // 
             // b76
             // 
@@ -821,12 +792,11 @@
             this.b76.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OldLace;
             this.b76.FlatAppearance.MouseOverBackColor = System.Drawing.Color.OldLace;
             this.b76.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b76.Location = new System.Drawing.Point(520, 9);
+            this.b76.Location = new System.Drawing.Point(524, 8);
             this.b76.Name = "b76";
-            this.b76.Size = new System.Drawing.Size(73, 74);
+            this.b76.Size = new System.Drawing.Size(77, 77);
             this.b76.TabIndex = 125;
             this.b76.UseVisualStyleBackColor = false;
-            this.b76.Click += new System.EventHandler(this.btnColumn7_Click);
             // 
             // b64
             // 
@@ -836,12 +806,11 @@
             this.b64.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OldLace;
             this.b64.FlatAppearance.MouseOverBackColor = System.Drawing.Color.OldLace;
             this.b64.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b64.Location = new System.Drawing.Point(435, 179);
+            this.b64.Location = new System.Drawing.Point(438, 178);
             this.b64.Name = "b64";
-            this.b64.Size = new System.Drawing.Size(73, 74);
+            this.b64.Size = new System.Drawing.Size(77, 77);
             this.b64.TabIndex = 128;
             this.b64.UseVisualStyleBackColor = false;
-            this.b64.Click += new System.EventHandler(this.btnColumn6_Click);
             // 
             // b25
             // 
@@ -851,12 +820,11 @@
             this.b25.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OldLace;
             this.b25.FlatAppearance.MouseOverBackColor = System.Drawing.Color.OldLace;
             this.b25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b25.Location = new System.Drawing.Point(95, 94);
+            this.b25.Location = new System.Drawing.Point(94, 93);
             this.b25.Name = "b25";
-            this.b25.Size = new System.Drawing.Size(73, 74);
+            this.b25.Size = new System.Drawing.Size(77, 77);
             this.b25.TabIndex = 120;
             this.b25.UseVisualStyleBackColor = false;
-            this.b25.Click += new System.EventHandler(this.BtnColumn2_Click);
             // 
             // b65
             // 
@@ -866,12 +834,11 @@
             this.b65.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OldLace;
             this.b65.FlatAppearance.MouseOverBackColor = System.Drawing.Color.OldLace;
             this.b65.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b65.Location = new System.Drawing.Point(435, 94);
+            this.b65.Location = new System.Drawing.Point(438, 93);
             this.b65.Name = "b65";
-            this.b65.Size = new System.Drawing.Size(73, 74);
+            this.b65.Size = new System.Drawing.Size(77, 77);
             this.b65.TabIndex = 126;
             this.b65.UseVisualStyleBackColor = false;
-            this.b65.Click += new System.EventHandler(this.btnColumn6_Click);
             // 
             // b43
             // 
@@ -881,12 +848,11 @@
             this.b43.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OldLace;
             this.b43.FlatAppearance.MouseOverBackColor = System.Drawing.Color.OldLace;
             this.b43.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b43.Location = new System.Drawing.Point(265, 264);
+            this.b43.Location = new System.Drawing.Point(266, 263);
             this.b43.Name = "b43";
-            this.b43.Size = new System.Drawing.Size(73, 74);
+            this.b43.Size = new System.Drawing.Size(77, 77);
             this.b43.TabIndex = 141;
             this.b43.UseVisualStyleBackColor = false;
-            this.b43.Click += new System.EventHandler(this.BtnColumn4_Click);
             // 
             // b54
             // 
@@ -896,12 +862,11 @@
             this.b54.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OldLace;
             this.b54.FlatAppearance.MouseOverBackColor = System.Drawing.Color.OldLace;
             this.b54.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b54.Location = new System.Drawing.Point(350, 179);
+            this.b54.Location = new System.Drawing.Point(352, 178);
             this.b54.Name = "b54";
-            this.b54.Size = new System.Drawing.Size(73, 74);
+            this.b54.Size = new System.Drawing.Size(77, 77);
             this.b54.TabIndex = 145;
             this.b54.UseVisualStyleBackColor = false;
-            this.b54.Click += new System.EventHandler(this.BtnColumn5_Click);
             // 
             // b35
             // 
@@ -911,12 +876,11 @@
             this.b35.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OldLace;
             this.b35.FlatAppearance.MouseOverBackColor = System.Drawing.Color.OldLace;
             this.b35.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b35.Location = new System.Drawing.Point(180, 94);
+            this.b35.Location = new System.Drawing.Point(180, 93);
             this.b35.Name = "b35";
-            this.b35.Size = new System.Drawing.Size(73, 74);
+            this.b35.Size = new System.Drawing.Size(77, 77);
             this.b35.TabIndex = 136;
             this.b35.UseVisualStyleBackColor = false;
-            this.b35.Click += new System.EventHandler(this.BtnColumn3_Click);
             // 
             // b14
             // 
@@ -926,12 +890,11 @@
             this.b14.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OldLace;
             this.b14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.OldLace;
             this.b14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b14.Location = new System.Drawing.Point(10, 179);
+            this.b14.Location = new System.Drawing.Point(8, 178);
             this.b14.Name = "b14";
-            this.b14.Size = new System.Drawing.Size(73, 74);
+            this.b14.Size = new System.Drawing.Size(77, 77);
             this.b14.TabIndex = 118;
             this.b14.UseVisualStyleBackColor = false;
-            this.b14.Click += new System.EventHandler(this.BtnColumn1_Click);
             // 
             // b44
             // 
@@ -941,12 +904,11 @@
             this.b44.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OldLace;
             this.b44.FlatAppearance.MouseOverBackColor = System.Drawing.Color.OldLace;
             this.b44.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b44.Location = new System.Drawing.Point(265, 179);
+            this.b44.Location = new System.Drawing.Point(266, 178);
             this.b44.Name = "b44";
-            this.b44.Size = new System.Drawing.Size(73, 74);
+            this.b44.Size = new System.Drawing.Size(77, 77);
             this.b44.TabIndex = 140;
             this.b44.UseVisualStyleBackColor = false;
-            this.b44.Click += new System.EventHandler(this.BtnColumn4_Click);
             // 
             // b45
             // 
@@ -956,12 +918,11 @@
             this.b45.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OldLace;
             this.b45.FlatAppearance.MouseOverBackColor = System.Drawing.Color.OldLace;
             this.b45.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b45.Location = new System.Drawing.Point(265, 94);
+            this.b45.Location = new System.Drawing.Point(266, 93);
             this.b45.Name = "b45";
-            this.b45.Size = new System.Drawing.Size(73, 74);
+            this.b45.Size = new System.Drawing.Size(77, 77);
             this.b45.TabIndex = 150;
             this.b45.UseVisualStyleBackColor = false;
-            this.b45.Click += new System.EventHandler(this.BtnColumn4_Click);
             // 
             // b55
             // 
@@ -971,12 +932,11 @@
             this.b55.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OldLace;
             this.b55.FlatAppearance.MouseOverBackColor = System.Drawing.Color.OldLace;
             this.b55.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b55.Location = new System.Drawing.Point(350, 94);
+            this.b55.Location = new System.Drawing.Point(352, 93);
             this.b55.Name = "b55";
-            this.b55.Size = new System.Drawing.Size(73, 74);
+            this.b55.Size = new System.Drawing.Size(77, 77);
             this.b55.TabIndex = 146;
             this.b55.UseVisualStyleBackColor = false;
-            this.b55.Click += new System.EventHandler(this.BtnColumn5_Click);
             // 
             // b34
             // 
@@ -986,12 +946,11 @@
             this.b34.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OldLace;
             this.b34.FlatAppearance.MouseOverBackColor = System.Drawing.Color.OldLace;
             this.b34.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b34.Location = new System.Drawing.Point(180, 179);
+            this.b34.Location = new System.Drawing.Point(180, 178);
             this.b34.Name = "b34";
-            this.b34.Size = new System.Drawing.Size(73, 74);
+            this.b34.Size = new System.Drawing.Size(77, 77);
             this.b34.TabIndex = 135;
             this.b34.UseVisualStyleBackColor = false;
-            this.b34.Click += new System.EventHandler(this.BtnColumn3_Click);
             // 
             // b75
             // 
@@ -1001,28 +960,29 @@
             this.b75.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OldLace;
             this.b75.FlatAppearance.MouseOverBackColor = System.Drawing.Color.OldLace;
             this.b75.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b75.Location = new System.Drawing.Point(520, 94);
+            this.b75.Location = new System.Drawing.Point(524, 93);
             this.b75.Name = "b75";
-            this.b75.Size = new System.Drawing.Size(73, 74);
+            this.b75.Size = new System.Drawing.Size(77, 77);
             this.b75.TabIndex = 127;
             this.b75.UseVisualStyleBackColor = false;
-            this.b75.Click += new System.EventHandler(this.btnColumn7_Click);
             // 
             // ConnectFour
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumBlue;
-            this.ClientSize = new System.Drawing.Size(854, 520);
+            this.ClientSize = new System.Drawing.Size(857, 520);
             this.Controls.Add(this.tblConnect4);
             this.Controls.Add(this.pnlInfo);
             this.Font = new System.Drawing.Font("Gadugi", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.KeyPreview = true;
             this.MaximumSize = new System.Drawing.Size(1400, 1000);
             this.MinimumSize = new System.Drawing.Size(788, 481);
             this.Name = "ConnectFour";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Connect Four";
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.ConnectFour_KeyUp);
             this.pnlTitle.ResumeLayout(false);
             this.pnlTitle.PerformLayout();
             this.pnlInfo.ResumeLayout(false);
