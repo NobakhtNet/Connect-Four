@@ -1,6 +1,6 @@
 [![c# .NET Framework 4.8](https://img.shields.io/badge/C%23%20.NET%20Framework-4.8-brightgreen)](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48)
 # Connect-Four
-### Connect4 game made in C# windows forms 
+### Connect4 game made in C# windows forms app
 
 ## Features
 - Checks for the **winner** or **draw** ofter every move
