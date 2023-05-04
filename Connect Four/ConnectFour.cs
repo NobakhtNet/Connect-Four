@@ -444,8 +444,6 @@ namespace Connect_Four
 
         private void changeTurn()
         {
-            UpdateStatus();
-
             if (turn == Color.Red)
                 turn = Color.Yellow;
             else
@@ -455,6 +453,8 @@ namespace Connect_Four
                 whoWon = "Yellow";
             else
                 whoWon = "Red";
+
+            UpdateStatus();
         }
 
         private void btnRestart_Click(object sender, EventArgs e)
