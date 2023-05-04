@@ -53,7 +53,12 @@ namespace Connect_Four
             this.Hide();
         }
 
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void lblLink1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://www.youtube.com/@NeutronOrg");
+        }
+
+        private void lblLink2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Process.Start("https://github.com/NeutronO");
         }
