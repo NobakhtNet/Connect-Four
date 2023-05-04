@@ -14,7 +14,7 @@
 
 ## Screenshots
 ![image](https://user-images.githubusercontent.com/96955087/235647334-9ff2a685-1b5d-47c7-b41c-04dd9c742ecf.png)
-![Screenshot](https://user-images.githubusercontent.com/96955087/236015349-45089d70-4b1b-4ec6-9795-707e4f90d2ab.png)
+![image](https://user-images.githubusercontent.com/96955087/236015349-45089d70-4b1b-4ec6-9795-707e4f90d2ab.png)
 
 ## How to play
 1. Click on the circle of the column where you want to drop your colored pieces or press (1, 2, 3, 4, 5, 6, 7) on your keyboard or number pad .
