@@ -31,16 +31,21 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConnectFour));
             this.lblLine = new System.Windows.Forms.Label();
             this.pnlTitle = new System.Windows.Forms.Panel();
+            this.bRedo = new System.Windows.Forms.Button();
             this.lblInfo = new System.Windows.Forms.Label();
             this.lblTitle = new System.Windows.Forms.Label();
+            this.bUndo = new System.Windows.Forms.Button();
             this.pnlInfo = new System.Windows.Forms.Panel();
             this.tblButtons = new System.Windows.Forms.TableLayoutPanel();
             this.btnRestart = new System.Windows.Forms.Button();
             this.btnHow = new System.Windows.Forms.Button();
             this.btnInfo = new System.Windows.Forms.Button();
             this.pnlStats = new System.Windows.Forms.Panel();
+            this.lblLastMove = new System.Windows.Forms.Label();
             this.lblRedScore = new System.Windows.Forms.Label();
             this.lblYellowScore = new System.Windows.Forms.Label();
+            this.btnTurn = new Connect_Four.RoundButton();
+            this.btnOutLine = new Connect_Four.RoundButton();
             this.lnlTurn = new System.Windows.Forms.Label();
             this.lblMove = new System.Windows.Forms.Label();
             this.tblConnect4 = new System.Windows.Forms.TableLayoutPanel();
@@ -86,8 +91,7 @@
             this.b55 = new Connect_Four.RoundButton();
             this.b34 = new Connect_Four.RoundButton();
             this.b75 = new Connect_Four.RoundButton();
-            this.btnTurn = new Connect_Four.RoundButton();
-            this.btnOutLine = new Connect_Four.RoundButton();
+            this.btnTheme = new System.Windows.Forms.Button();
             this.pnlTitle.SuspendLayout();
             this.pnlInfo.SuspendLayout();
             this.tblButtons.SuspendLayout();
@@ -109,19 +113,37 @@
             // 
             // pnlTitle
             // 
+            this.pnlTitle.Controls.Add(this.bRedo);
             this.pnlTitle.Controls.Add(this.lblInfo);
             this.pnlTitle.Controls.Add(this.lblTitle);
+            this.pnlTitle.Controls.Add(this.btnTheme);
+            this.pnlTitle.Controls.Add(this.bUndo);
             this.pnlTitle.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTitle.Location = new System.Drawing.Point(4, 0);
             this.pnlTitle.Name = "pnlTitle";
-            this.pnlTitle.Size = new System.Drawing.Size(244, 138);
+            this.pnlTitle.Size = new System.Drawing.Size(244, 136);
             this.pnlTitle.TabIndex = 4;
+            // 
+            // bRedo
+            // 
+            this.bRedo.BackColor = System.Drawing.Color.Bisque;
+            this.bRedo.FlatAppearance.BorderColor = System.Drawing.Color.DarkKhaki;
+            this.bRedo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bRedo.Font = new System.Drawing.Font("Gadugi", 14.25F, System.Drawing.FontStyle.Bold);
+            this.bRedo.Image = ((System.Drawing.Image)(resources.GetObject("bRedo.Image")));
+            this.bRedo.Location = new System.Drawing.Point(189, 3);
+            this.bRedo.Name = "bRedo";
+            this.bRedo.Size = new System.Drawing.Size(52, 27);
+            this.bRedo.TabIndex = 90;
+            this.bRedo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.bRedo.UseVisualStyleBackColor = false;
+            this.bRedo.Click += new System.EventHandler(this.bRedo_Click);
             // 
             // lblInfo
             // 
             this.lblInfo.AutoSize = true;
             this.lblInfo.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInfo.Location = new System.Drawing.Point(15, 81);
+            this.lblInfo.Location = new System.Drawing.Point(15, 88);
             this.lblInfo.Name = "lblInfo";
             this.lblInfo.Size = new System.Drawing.Size(214, 20);
             this.lblInfo.TabIndex = 89;
@@ -131,11 +153,25 @@
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft JhengHei", 33F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(5, 25);
+            this.lblTitle.Location = new System.Drawing.Point(5, 32);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(235, 55);
             this.lblTitle.TabIndex = 88;
             this.lblTitle.Text = "Connect 4";
+            // 
+            // bUndo
+            // 
+            this.bUndo.BackColor = System.Drawing.Color.Bisque;
+            this.bUndo.FlatAppearance.BorderColor = System.Drawing.Color.DarkKhaki;
+            this.bUndo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bUndo.Font = new System.Drawing.Font("Gadugi", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bUndo.Image = ((System.Drawing.Image)(resources.GetObject("bUndo.Image")));
+            this.bUndo.Location = new System.Drawing.Point(133, 3);
+            this.bUndo.Name = "bUndo";
+            this.bUndo.Size = new System.Drawing.Size(52, 27);
+            this.bUndo.TabIndex = 76;
+            this.bUndo.UseVisualStyleBackColor = false;
+            this.bUndo.Click += new System.EventHandler(this.bUndo_Click);
             // 
             // pnlInfo
             // 
@@ -161,7 +197,7 @@
             this.tblButtons.Controls.Add(this.btnHow, 1, 2);
             this.tblButtons.Controls.Add(this.btnInfo, 1, 3);
             this.tblButtons.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tblButtons.Location = new System.Drawing.Point(4, 253);
+            this.tblButtons.Location = new System.Drawing.Point(4, 277);
             this.tblButtons.Name = "tblButtons";
             this.tblButtons.RowCount = 5;
             this.tblButtons.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
@@ -171,15 +207,16 @@
             this.tblButtons.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
             this.tblButtons.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tblButtons.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tblButtons.Size = new System.Drawing.Size(244, 265);
+            this.tblButtons.Size = new System.Drawing.Size(244, 241);
             this.tblButtons.TabIndex = 80;
             // 
             // btnRestart
             // 
             this.btnRestart.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnRestart.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnRestart.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.btnRestart.Font = new System.Drawing.Font("Gadugi", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRestart.Location = new System.Drawing.Point(64, 37);
+            this.btnRestart.Location = new System.Drawing.Point(64, 27);
             this.btnRestart.Name = "btnRestart";
             this.btnRestart.Size = new System.Drawing.Size(116, 54);
             this.btnRestart.TabIndex = 73;
@@ -191,8 +228,9 @@
             // 
             this.btnHow.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnHow.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnHow.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.btnHow.Font = new System.Drawing.Font("Gadugi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHow.Location = new System.Drawing.Point(64, 97);
+            this.btnHow.Location = new System.Drawing.Point(64, 87);
             this.btnHow.Name = "btnHow";
             this.btnHow.Size = new System.Drawing.Size(116, 54);
             this.btnHow.TabIndex = 74;
@@ -204,8 +242,9 @@
             // 
             this.btnInfo.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnInfo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnInfo.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.btnInfo.Font = new System.Drawing.Font("Gadugi", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInfo.Location = new System.Drawing.Point(64, 157);
+            this.btnInfo.Location = new System.Drawing.Point(64, 147);
             this.btnInfo.Name = "btnInfo";
             this.btnInfo.Size = new System.Drawing.Size(116, 54);
             this.btnInfo.TabIndex = 75;
@@ -215,6 +254,7 @@
             // 
             // pnlStats
             // 
+            this.pnlStats.Controls.Add(this.lblLastMove);
             this.pnlStats.Controls.Add(this.lblRedScore);
             this.pnlStats.Controls.Add(this.lblYellowScore);
             this.pnlStats.Controls.Add(this.btnTurn);
@@ -222,10 +262,20 @@
             this.pnlStats.Controls.Add(this.lnlTurn);
             this.pnlStats.Controls.Add(this.lblMove);
             this.pnlStats.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlStats.Location = new System.Drawing.Point(4, 138);
+            this.pnlStats.Location = new System.Drawing.Point(4, 136);
             this.pnlStats.Name = "pnlStats";
-            this.pnlStats.Size = new System.Drawing.Size(244, 115);
+            this.pnlStats.Size = new System.Drawing.Size(244, 141);
             this.pnlStats.TabIndex = 5;
+            // 
+            // lblLastMove
+            // 
+            this.lblLastMove.Font = new System.Drawing.Font("Gadugi", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLastMove.Location = new System.Drawing.Point(1, 111);
+            this.lblLastMove.Name = "lblLastMove";
+            this.lblLastMove.Size = new System.Drawing.Size(240, 28);
+            this.lblLastMove.TabIndex = 92;
+            this.lblLastMove.Text = "Last Move : N/A";
+            this.lblLastMove.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblRedScore
             // 
@@ -233,7 +283,7 @@
             this.lblRedScore.BackColor = System.Drawing.Color.Transparent;
             this.lblRedScore.Font = new System.Drawing.Font("Gadugi", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRedScore.ForeColor = System.Drawing.Color.Red;
-            this.lblRedScore.Location = new System.Drawing.Point(20, 6);
+            this.lblRedScore.Location = new System.Drawing.Point(20, 1);
             this.lblRedScore.Name = "lblRedScore";
             this.lblRedScore.Size = new System.Drawing.Size(80, 25);
             this.lblRedScore.TabIndex = 91;
@@ -245,31 +295,57 @@
             this.lblYellowScore.BackColor = System.Drawing.Color.Transparent;
             this.lblYellowScore.Font = new System.Drawing.Font("Gadugi", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblYellowScore.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            this.lblYellowScore.Location = new System.Drawing.Point(123, 6);
+            this.lblYellowScore.Location = new System.Drawing.Point(123, 1);
             this.lblYellowScore.Name = "lblYellowScore";
             this.lblYellowScore.Size = new System.Drawing.Size(108, 25);
             this.lblYellowScore.TabIndex = 90;
             this.lblYellowScore.Text = "Yellow : 0";
             // 
+            // btnTurn
+            // 
+            this.btnTurn.BackColor = System.Drawing.Color.Red;
+            this.btnTurn.FlatAppearance.BorderSize = 0;
+            this.btnTurn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
+            this.btnTurn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.btnTurn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTurn.Location = new System.Drawing.Point(148, 74);
+            this.btnTurn.Name = "btnTurn";
+            this.btnTurn.Size = new System.Drawing.Size(30, 30);
+            this.btnTurn.TabIndex = 89;
+            this.btnTurn.UseVisualStyleBackColor = false;
+            // 
+            // btnOutLine
+            // 
+            this.btnOutLine.BackColor = System.Drawing.Color.Black;
+            this.btnOutLine.FlatAppearance.BorderSize = 0;
+            this.btnOutLine.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.btnOutLine.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.btnOutLine.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOutLine.Location = new System.Drawing.Point(146, 72);
+            this.btnOutLine.Name = "btnOutLine";
+            this.btnOutLine.Size = new System.Drawing.Size(34, 34);
+            this.btnOutLine.TabIndex = 88;
+            this.btnOutLine.UseVisualStyleBackColor = false;
+            // 
             // lnlTurn
             // 
             this.lnlTurn.AutoSize = true;
-            this.lnlTurn.Font = new System.Drawing.Font("Gadugi", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lnlTurn.Location = new System.Drawing.Point(59, 78);
+            this.lnlTurn.Font = new System.Drawing.Font("Gadugi", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lnlTurn.Location = new System.Drawing.Point(61, 74);
             this.lnlTurn.Name = "lnlTurn";
-            this.lnlTurn.Size = new System.Drawing.Size(86, 34);
+            this.lnlTurn.Size = new System.Drawing.Size(80, 31);
             this.lnlTurn.TabIndex = 87;
             this.lnlTurn.Text = "Turn :";
             // 
             // lblMove
             // 
-            this.lblMove.AutoSize = true;
-            this.lblMove.Font = new System.Drawing.Font("Gadugi", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMove.Location = new System.Drawing.Point(60, 40);
+            this.lblMove.Font = new System.Drawing.Font("Gadugi", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMove.Location = new System.Drawing.Point(1, 37);
             this.lblMove.Name = "lblMove";
-            this.lblMove.Size = new System.Drawing.Size(125, 34);
+            this.lblMove.Size = new System.Drawing.Size(240, 31);
             this.lblMove.TabIndex = 86;
             this.lblMove.Text = "Move : 0";
+            this.lblMove.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tblConnect4
             // 
@@ -360,10 +436,14 @@
             this.b71.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OldLace;
             this.b71.FlatAppearance.MouseOverBackColor = System.Drawing.Color.OldLace;
             this.b71.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.b71.Font = new System.Drawing.Font("Gadugi", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.b71.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.b71.Location = new System.Drawing.Point(524, 433);
             this.b71.Name = "b71";
+            this.b71.Padding = new System.Windows.Forms.Padding(0, 46, 40, 0);
             this.b71.Size = new System.Drawing.Size(77, 77);
             this.b71.TabIndex = 147;
+            this.b71.Text = "7";
             this.b71.UseVisualStyleBackColor = false;
             this.b71.Click += new System.EventHandler(this.btnColumn7_Click);
             // 
@@ -375,10 +455,14 @@
             this.b31.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OldLace;
             this.b31.FlatAppearance.MouseOverBackColor = System.Drawing.Color.OldLace;
             this.b31.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.b31.Font = new System.Drawing.Font("Gadugi", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.b31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.b31.Location = new System.Drawing.Point(180, 433);
             this.b31.Name = "b31";
+            this.b31.Padding = new System.Windows.Forms.Padding(0, 46, 40, 0);
             this.b31.Size = new System.Drawing.Size(77, 77);
             this.b31.TabIndex = 132;
+            this.b31.Text = "3";
             this.b31.UseVisualStyleBackColor = false;
             this.b31.Click += new System.EventHandler(this.BtnColumn3_Click);
             // 
@@ -390,10 +474,14 @@
             this.b61.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OldLace;
             this.b61.FlatAppearance.MouseOverBackColor = System.Drawing.Color.OldLace;
             this.b61.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.b61.Font = new System.Drawing.Font("Gadugi", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.b61.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.b61.Location = new System.Drawing.Point(438, 433);
             this.b61.Name = "b61";
+            this.b61.Padding = new System.Windows.Forms.Padding(0, 46, 40, 0);
             this.b61.Size = new System.Drawing.Size(77, 77);
             this.b61.TabIndex = 148;
+            this.b61.Text = "6";
             this.b61.UseVisualStyleBackColor = false;
             this.b61.Click += new System.EventHandler(this.btnColumn6_Click);
             // 
@@ -405,10 +493,14 @@
             this.b11.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OldLace;
             this.b11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.OldLace;
             this.b11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.b11.Font = new System.Drawing.Font("Gadugi", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.b11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.b11.Location = new System.Drawing.Point(8, 433);
             this.b11.Name = "b11";
+            this.b11.Padding = new System.Windows.Forms.Padding(0, 46, 40, 0);
             this.b11.Size = new System.Drawing.Size(77, 77);
             this.b11.TabIndex = 74;
+            this.b11.Text = "1";
             this.b11.UseVisualStyleBackColor = false;
             this.b11.Click += new System.EventHandler(this.BtnColumn1_Click);
             // 
@@ -420,10 +512,14 @@
             this.b51.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OldLace;
             this.b51.FlatAppearance.MouseOverBackColor = System.Drawing.Color.OldLace;
             this.b51.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.b51.Font = new System.Drawing.Font("Gadugi", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.b51.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.b51.Location = new System.Drawing.Point(352, 433);
             this.b51.Name = "b51";
+            this.b51.Padding = new System.Windows.Forms.Padding(0, 46, 40, 0);
             this.b51.Size = new System.Drawing.Size(77, 77);
             this.b51.TabIndex = 142;
+            this.b51.Text = "5";
             this.b51.UseVisualStyleBackColor = false;
             this.b51.Click += new System.EventHandler(this.BtnColumn5_Click);
             // 
@@ -435,10 +531,14 @@
             this.b41.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OldLace;
             this.b41.FlatAppearance.MouseOverBackColor = System.Drawing.Color.OldLace;
             this.b41.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.b41.Font = new System.Drawing.Font("Gadugi", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.b41.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.b41.Location = new System.Drawing.Point(266, 433);
             this.b41.Name = "b41";
+            this.b41.Padding = new System.Windows.Forms.Padding(0, 46, 40, 0);
             this.b41.Size = new System.Drawing.Size(77, 77);
             this.b41.TabIndex = 137;
+            this.b41.Text = "4";
             this.b41.UseVisualStyleBackColor = false;
             this.b41.Click += new System.EventHandler(this.BtnColumn4_Click);
             // 
@@ -450,10 +550,14 @@
             this.b21.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OldLace;
             this.b21.FlatAppearance.MouseOverBackColor = System.Drawing.Color.OldLace;
             this.b21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.b21.Font = new System.Drawing.Font("Gadugi", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.b21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.b21.Location = new System.Drawing.Point(94, 433);
             this.b21.Name = "b21";
+            this.b21.Padding = new System.Windows.Forms.Padding(0, 46, 40, 0);
             this.b21.Size = new System.Drawing.Size(77, 77);
             this.b21.TabIndex = 151;
+            this.b21.Text = "2";
             this.b21.UseVisualStyleBackColor = false;
             this.b21.Click += new System.EventHandler(this.BtnColumn2_Click);
             // 
@@ -982,31 +1086,19 @@
             this.b75.UseVisualStyleBackColor = false;
             this.b75.Click += new System.EventHandler(this.btnColumn7_Click);
             // 
-            // btnTurn
+            // btnTheme
             // 
-            this.btnTurn.BackColor = System.Drawing.Color.Red;
-            this.btnTurn.FlatAppearance.BorderSize = 0;
-            this.btnTurn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
-            this.btnTurn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.btnTurn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTurn.Location = new System.Drawing.Point(151, 78);
-            this.btnTurn.Name = "btnTurn";
-            this.btnTurn.Size = new System.Drawing.Size(30, 30);
-            this.btnTurn.TabIndex = 89;
-            this.btnTurn.UseVisualStyleBackColor = false;
-            // 
-            // btnOutLine
-            // 
-            this.btnOutLine.BackColor = System.Drawing.Color.Black;
-            this.btnOutLine.FlatAppearance.BorderSize = 0;
-            this.btnOutLine.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.btnOutLine.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.btnOutLine.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOutLine.Location = new System.Drawing.Point(149, 76);
-            this.btnOutLine.Name = "btnOutLine";
-            this.btnOutLine.Size = new System.Drawing.Size(34, 34);
-            this.btnOutLine.TabIndex = 88;
-            this.btnOutLine.UseVisualStyleBackColor = false;
+            this.btnTheme.BackColor = System.Drawing.Color.Bisque;
+            this.btnTheme.FlatAppearance.BorderColor = System.Drawing.Color.DarkKhaki;
+            this.btnTheme.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTheme.Font = new System.Drawing.Font("Gadugi", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTheme.Image = ((System.Drawing.Image)(resources.GetObject("btnTheme.Image")));
+            this.btnTheme.Location = new System.Drawing.Point(6, 3);
+            this.btnTheme.Name = "btnTheme";
+            this.btnTheme.Size = new System.Drawing.Size(41, 27);
+            this.btnTheme.TabIndex = 76;
+            this.btnTheme.UseVisualStyleBackColor = false;
+            this.btnTheme.Click += new System.EventHandler(this.btnTheme_Click);
             // 
             // ConnectFour
             // 
@@ -1024,7 +1116,7 @@
             this.Name = "ConnectFour";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Connect Four";
-            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.ConnectFour_KeyUp);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ConnectFour_KeyDown);
             this.pnlTitle.ResumeLayout(false);
             this.pnlTitle.PerformLayout();
             this.pnlInfo.ResumeLayout(false);
@@ -1097,5 +1189,9 @@
         private RoundButton b55;
         private RoundButton b34;
         private RoundButton b75;
+        private System.Windows.Forms.Button bUndo;
+        private System.Windows.Forms.Button bRedo;
+        private System.Windows.Forms.Label lblLastMove;
+        private System.Windows.Forms.Button btnTheme;
     }
 }
